@@ -10,3 +10,13 @@ angular.module('mms')
       zoom: 8
     };
   });
+
+'use strict';
+
+angular.module('mms')
+  .controller('RootCtrl', function ($scope) {
+    $scope.menuOpen = false;
+    $scope.toggleMenu = function(){
+      $scope.menuOpen = !$scope.menuOpen;
+    }
+  });

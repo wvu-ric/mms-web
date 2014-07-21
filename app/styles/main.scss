@@ -20,6 +20,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 .jumbotron {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+  padding-top: 3em;
 }
 
 .jumbotron .btn {
@@ -36,4 +37,10 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     margin-top: 28px;
 }
 
-.angular-google-map-container { height: 400px; }
+.angular-google-map-container {
+  z-index: 1;
+  position: absolute;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 400px; }

@@ -6,6 +6,31 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import "footer";
 
 
+nav.mms-menu {
+  background-color: #333;
+  color:#fff;
+  left:-300px;
+  position:absolute;
+  width: 100%;
+  max-width: 300px;
+  height:100%;
+  top:0px;
+}
+
+nav.mms-menu.open {
+  left:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .marketing{
     padding-left: 15px;
@@ -20,7 +45,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 .jumbotron {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
-  padding-top: 3em;
+//  padding-top: 3em;
 }
 
 .jumbotron .btn {

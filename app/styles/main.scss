@@ -1,46 +1,15 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import "base";
+@import "header";
+@import "footer";
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* Space out content a bit */
-body {
-  padding: 0px;
-  margin: 0px;
-  font-size: medium;
-}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
+.marketing{
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.mms-btn-menu{
-  font-size: 1.6em;
-  padding-top: 0.16em;
-  padding-bottom: 0.16em;
-  display: inline-block;
-}
-
-/* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {

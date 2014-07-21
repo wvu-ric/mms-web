@@ -6,11 +6,11 @@ Syntax error: File to import not found or unreadable: sass-bootstrap/lib/bootstr
 1: $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 2: 
 3: @import 'sass-bootstrap/lib/bootstrap';
-4: 
-5: .browsehappy {
-6:     margin: 0.2em 0;
-7:     background: #ccc;
-8:     color: #000;
+4: @import "base";
+5: @import "header";
+6: @import "footer";
+7: 
+8: 
 
 Backtrace:
 main.scss:3
@@ -55,4 +55,4 @@ main.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: sass-bootstrap/lib/bootstrap.\A               Load path: /Users/sam/projects/mms/app/styles (DEPRECATED)\A         on line 3 of main.scss\A \A 1: $icon-font-path: \"/bower_components/sass-bootstrap/fonts/\";\A 2: \A 3: @import 'sass-bootstrap/lib/bootstrap';\A 4: \A 5: .browsehappy {\A 6:     margin: 0.2em 0;\A 7:     background: #ccc;\A 8:     color: #000;"; }
+  content: "Syntax error: File to import not found or unreadable: sass-bootstrap/lib/bootstrap.\A               Load path: /Users/sam/projects/mms/app/styles (DEPRECATED)\A         on line 3 of main.scss\A \A 1: $icon-font-path: \"/bower_components/sass-bootstrap/fonts/\";\A 2: \A 3: @import 'sass-bootstrap/lib/bootstrap';\A 4: @import \"base\";\A 5: @import \"header\";\A 6: @import \"footer\";\A 7: \A 8: "; }

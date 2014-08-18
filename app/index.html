@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no; minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -25,35 +25,12 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
-      <a ng-click="toggleMenu()" class="mms-btn-menu" ng-class="{visible:!menuOpen}"><i class="fa fa-bars"></i> </a>
-      <a ng-click="toggleMenu()" class="mms-btn-menu" ng-class="{visible:menuOpen}"><i class="fa fa-times"></i> </a>
 
-      <h1>Startup Shuttle</h1>
-    </header>
+    <mms-menu title="MMS" description="We do things" categories="categories"></mms-menu>
 
+    <div ng-view="" style="padding-top: 3em;"></div>
 
-    <!-- Add your site or application content here -->
-    <nav class="mms-menu" ng-class="{open:menuOpen}">
-      <ul class="categories">
-        <li><a ng-href=""><div class="icon"><i class="fa fa-home"></i></div>Home</a></li>
-        <li><a ng-href=""><div class="icon"><i class="fa fa-rocket"></i></div>Startups</a></li>
-        <li><a ng-href=""><div class="icon"><i class="fa fa-pencil-square-o"></i></div>Design</a></li>
-        <li><a ng-href=""><div class="icon"><i class="fa fa-database"></i></div>Programming</a></li>
-        <li><a ng-href=""><div class="icon"><i class="fa fa-money"></i></div>Funding</a></li>
-        <li><a ng-href=""><div class="icon"><i class="fa fa-globe"></i></div>Business</a></li>
-      </ul>
-      <footer>
-        <h3>About</h3>
-        <p class="description">
-          Startup Shuttle is a curated online community of trendsetting designers, cutting edge developers, and startup experts from around the world.
-          <br>
-        </p>
-        <a href="/">Learn more <i class="fa fa-arrow-circle-right"></i> </a>
-
-      </footer>
-    </nav>
-    <div ng-view=""></div>
+    <div ng-include="'/views/partials/footer.html'"></div>
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -79,7 +56,10 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/directives/components.js"></script>
+
+    <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/directives/menu/mms-menu.js"></script>
         <!-- endbuild -->
 </body>
 </html>

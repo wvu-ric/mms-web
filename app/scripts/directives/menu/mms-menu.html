@@ -1,0 +1,25 @@
+<header>
+  <a ng-click="toggleMenu()" class="mms-btn-menu" ng-class="{visible:!menuOpen}"><i class="fa fa-bars"></i> </a>
+  <a ng-click="toggleMenu()" class="mms-btn-menu" ng-class="{visible:menuOpen}"><i class="fa fa-times"></i> </a>
+
+  <h1>{{title}}</h1>
+</header>
+
+<nav class="mms-menu" ng-class="{open:menuOpen}">
+  <ul class="categories">
+    <li><a ng-href=""><div class="icon"><i class="fa fa-home"></i></div>Home</a></li>
+    <li><a ng-href=""><div class="icon"><i class="fa fa-rocket"></i></div>Startups</a></li>
+    <li><a ng-href=""><div class="icon"><i class="fa fa-pencil-square-o"></i></div>Design</a></li>
+    <li><a ng-href=""><div class="icon"><i class="fa fa-database"></i></div>Programming</a></li>
+    <li><a ng-href=""><div class="icon"><i class="fa fa-money"></i></div>Funding</a></li>
+    <li><a ng-href=""><div class="icon"><i class="fa fa-globe"></i></div>Business</a></li>
+  </ul>
+  <footer>
+    <h3>About</h3>
+    <p class="description">
+      {{description}}
+      <br>
+    </p>
+    <!--<a href="/">Learn more <i class="fa fa-arrow-circle-right"></i> </a>-->
+  </footer>
+</nav>

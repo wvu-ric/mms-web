@@ -5,7 +5,8 @@ angular.module('mms', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'google-maps'
+  'google-maps',
+  'mms.components'
 ])
   .config(function ($routeProvider) {
     $routeProvider

@@ -1,26 +1,15 @@
-/* Custom page header */
 header {
   padding-left: 15px;
   padding-right: 15px;
-
   border-bottom: 1px solid #e5e5e6;
   position: absolute;
   top:0;
   width: 100%;
   right:0px;
   left:0px;
-
   background-color: #FFF;
-
-//  /* Background: */
-//  background-image: -o-linear-gradient(-90deg, rgba(248,248,248,0.93) 0%, rgba(249, 249, 249, 0.97) 50%, rgba(248,248,248,0.93) 100%);
-//  background-image: -moz-linear-gradient(-90deg, rgba(248,248,248,0.93) 0%, rgba(249, 249, 249, 0.97) 50%, rgba(248,248,248,0.93) 100%);
-//  background-image: -ms-linear-gradient(-90deg, rgba(248,248,248,0.93) 0%, rgba(249, 249, 249, 0.97) 50%, rgba(248,248,248,0.93) 100%);
-//  background-image: linear-gradient(-180deg, rgba(248,248,248,0.93) 0%, rgba(249, 249, 249, 0.97) 50%, rgba(248,248,248,0.93) 100%);
   z-index: 3;
 
-//  -moz-box-shadow:    0px 1px 2px 0px rgba(0, 0, 0, 0.10);
-//  box-shadow:         0px 1px 2px 0px rgba(0,0,0,0.10);
   .mms-btn-menu{
     position:absolute;
     top:0;
@@ -32,78 +21,5 @@ header {
     font-size: 1.2em;
     padding  : 0.60em 0;
     text-align: center;
-  }
-}
-
-.mms-btn-menu{
-  font-size: 1.4em;
-  padding-top: 0.35em;
-  padding-bottom: 0.35em;
-  display: inline-block;
-
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-
-  opacity: 0;
-  color: #5B5B5E;
-
-}
-
-.mms-btn-menu:active{
-  color: #5B5B5E;
-  text-decoration: none;
-}
-
-.mms-btn-menu:hover{
-  color: #3B3B3E;
-  text-decoration: none;
- }
-
-
-.mms-btn-menu.visible{
-
-  opacity: 1;
-
-}
-
-ul.categories{
-  overflow: auto;
-  margin:0;
-  padding : 4px 0 8px;
-
-  li{
-    width: 50%;
-    display: inline-block;
-    float:left;
-    text-align: center;
-    padding : 5px 10px;
-    a{
-      background-color: #23719F;
-      border-radius: 3px;
-      color: #FFF;
-      font-weight: bold;
-      display: block;
-      padding-bottom: 10px;
-
-      .icon{
-        font-size: 48px;
-        color: #E9E3F6;
-      }
-    }
-    a:hover, a:active{
-      text-decoration: none;
-      background-color: #1D5C82;
-
-    }
-  }
-  li:nth-child(odd){
-    padding-right:5px;
-
-  }
-  li:nth-child(even){
-    padding-left:5px;
   }
 }

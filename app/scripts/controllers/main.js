@@ -5,10 +5,10 @@ angular.module('mms')
 
     $scope.map = {
       center: {
-        latitude: 45,
-        longitude: -73
+        latitude: 39.630454,
+        longitude: -79.957934
       },
-      zoom: 8,
+      zoom: 17,
       options:{
         disableDefaultUI:true
       }

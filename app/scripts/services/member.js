@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('mms.models')
-  .service('Category', function Category() {
+  .service('Member', function Member() {
     // AngularJS will instantiate a singleton by calling "new" on this function
   });

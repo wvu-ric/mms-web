@@ -6,7 +6,8 @@ angular.module('mms', [
   'ngSanitize',
   'ngRoute',
   'google-maps',
-  'mms.components'
+  'mms.components',
+  'mms.models'
 ])
   .config(function ($routeProvider) {
     $routeProvider

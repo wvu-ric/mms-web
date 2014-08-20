@@ -85,23 +85,24 @@ ul.categories{
     padding : 5px 10px;
 
     a{
-      background-color: #23719F;
+      border: 1px solid #eee;
+      background-color: #FFF;
       border-radius: 3px;
-      color: #FFF;
+      color: #333;
       font-weight: bold;
       display: block;
       padding-bottom: 10px;
 
       .icon{
         font-size: 48px;
-        color: #E9E3F6;
+        color: #428bca;
       }
     }
 
     a:hover, a:active{
       text-decoration: none;
-      background-color: #1D5C82;
-
+      background-color: #FAFAFC;
+      border: 1px solid #428bca;
     }
   }
   li:nth-child(odd){
@@ -111,4 +112,39 @@ ul.categories{
   li:nth-child(even){
     padding-left:5px;
   }
+}
+
+section.about {
+  padding-left:1em;
+  padding-right:1em;
+
+  border-top: 1px solid #ddd;
+
+
+  h1{
+    margin:0;
+    padding:0;
+
+    font-weight: 300;
+    font-size:1.8em;
+    line-height: 2em;
+
+  }
+
+  article.description{
+    line-height: 1.45em;
+    font-size: 0.90em;
+    color: #696969;
+
+
+
+    p{
+      padding:0px;
+      margin:0px;
+      padding-bottom: 1em;
+    }
+
+  }
+
+
 }

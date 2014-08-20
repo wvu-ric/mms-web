@@ -8,5 +8,19 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 
 .angular-google-map-container {
-  height: 400px;
+  height: 340px;
 }
+
+footer{
+  color: #C0C0C0;
+  font-size:12px;
+  line-height: 18px;
+}
+
+.powered-by{
+  border-radius:3px;
+  padding-left:5px;
+  padding-right:5px;
+  border:1px solid #ddd;
+}
+

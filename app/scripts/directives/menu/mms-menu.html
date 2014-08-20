@@ -6,12 +6,14 @@
 </header>
 
 <nav class="mms-menu" ng-class="{open:menuOpen}">
+  <div class="nav-contents">
+
   <ul class="categories">
     <li><a ng-href=""><div class="icon"><i class="fa fa-home"></i></div>All Categories</a></li>
     <li><a ng-href=""><div class="icon"><i class="fa fa-rocket"></i></div>Food & Drink</a></li>
     <li><a ng-href=""><div class="icon"><i class="fa fa-pencil-square-o"></i></div>Nightlife</a></li>
     <li><a ng-href=""><div class="icon"><i class="fa fa-database"></i></div>Shopping</a></li>
-    <li><a ng-href=""><div class="icon"><i class="fa fa-globe"></i></div>Events & Attractions</a></li>
+    <li><a ng-href=""><div class="icon"><i class="fa fa-globe"></i></div>Attractions</a></li>
     <li><a ng-href=""><div class="icon"><i class="fa fa-money"></i></div>Services</a></li>
   </ul>
   <section class="about">
@@ -31,5 +33,6 @@
   </section>
 
   <div ng-include="'/views/partials/footer.html'"></div>
+  </div>
 
 </nav>

@@ -18,7 +18,7 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   border-bottom: 1px solid #e5e5e6;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   right: 0px;
@@ -60,13 +60,12 @@ header {
   opacity: 1; }
 
 nav.mms-menu {
+  display: inline;
   padding-top: 3em;
   background-color: #FAFAFC;
   position: absolute;
   width: 100%;
-  height: 100%;
-  padding-bottom: 15px;
-  top: -100%;
+  top: -2000px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -135,7 +134,7 @@ section.about {
     line-height: 2em; }
   section.about article.description {
     line-height: 1.45em;
-    font-size: 0.90em;
+    font-size: 1em;
     color: #696969; }
     section.about article.description p {
       padding: 0px;
@@ -143,9 +142,11 @@ section.about {
       padding-bottom: 1em; }
 
 /* Custom page footer */
+.mms-menu footer {
+  border-top: 1px solid #ccc;
+  margin-top: 1.5em; }
+
 footer {
-  margin-top: 1.5em;
-  border-top: 1px solid #ddd;
   padding: 10px 15px 5px;
   margin-bottom: 0.5em;
   color: #C0C0C0;
@@ -156,21 +157,62 @@ footer {
   border-radius: 3px;
   padding-left: 5px;
   padding-right: 5px;
-  border: 1px solid #ddd; }
+  border: 1px solid #ccc; }
 
 a {
   cursor: pointer; }
 
 .angular-google-map-container {
-  height: 340px; }
+  height: 280px; }
+
+div.current-story-container {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 2.6em;
+  left: 0;
+  right: 0;
+  padding: 0.5em; }
+  div.current-story-container .current-story {
+    position: relative;
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+    /* d6sFg-r1 2: */
+    border-radius: 4px;
+    /* Rectangle 23: */
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.5em; }
+    div.current-story-container .current-story .profile {
+      position: absolute;
+      left: 0.5em;
+      top: 0.5em;
+      border-radius: 100%; }
+    div.current-story-container .current-story h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 1.1em;
+      font-family: HelveticaNeue-Medium;
+      color: #1E1E1F;
+      line-height: 1.5em;
+      padding-left: 65px; }
+    div.current-story-container .current-story p {
+      margin: 0px;
+      padding: 0px;
+      padding-left: 65px; }
 
 section.categories {
   line-height: 2.2em;
   padding-left: 1em;
   padding-right: 1em;
   text-align: right;
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   background-color: #F8F8F8; }
   section.categories a {
     display: block;
@@ -184,7 +226,7 @@ section.stories {
     padding-bottom: 0.35em;
     padding-right: 1em;
     padding-left: 1em;
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #ccc; }
     section.stories article h1 {
       margin: 0;
       padding: 0;

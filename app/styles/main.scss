@@ -11,8 +11,72 @@ a{
 }
 
 .angular-google-map-container {
-  height: 340px;
+  height: 280px;
 }
+
+div.current-story-container{
+
+  width: 100%;
+  display:block;
+  position:absolute;
+  top:2.6em;
+  left:0;
+  right:0;
+
+  padding:0.5em;
+
+
+  .current-story{
+    position:relative;
+
+    .profile{
+      position:absolute;
+      left:0.5em;
+      top:0.5em;
+
+      border-radius: 100%;
+
+    }
+
+
+    background-color: #fff;
+    display:inline-block;
+    width: 100%;
+    /* d6sFg-r1 2: */
+
+    border-radius: 4px;
+    /* Rectangle 23: */
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+
+    font-size: 1.1em;
+
+    padding-left:0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.5em;
+
+    h1{
+      padding:0;
+      margin:0;
+      font-size: 1.1em;
+      font-family: HelveticaNeue-Medium;
+      color: #1E1E1F;
+      line-height: 1.5em;
+      padding-left:65px;
+
+    }
+
+    p{
+      margin:0px;
+      padding:0px;
+      padding-left:65px;
+
+    }
+  }
+}
+
+
 
 
 section.categories{
@@ -20,8 +84,8 @@ section.categories{
   padding-left:1em;
   padding-right:1em;
   text-align: right;
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   background-color: #F8F8F8;
   a{
     display:block;
@@ -39,7 +103,7 @@ section.stories{
     padding-right:1em;
     padding-left:1em;
 
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
 
     h1{
       margin:0;

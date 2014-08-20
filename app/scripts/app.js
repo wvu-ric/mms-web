@@ -15,6 +15,10 @@ angular.module('mms', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/member/:id', {
+        templateUrl: 'views/member.html',
+        controller: 'MemberCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

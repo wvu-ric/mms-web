@@ -1,21 +1,12 @@
 'use strict';
 
 angular.module('mms')
-  .controller('MainCtrl', function ($scope) {
-
-    $scope.map = {
-      center: {
-        latitude: 39.630454,
-        longitude: -79.957934
-      },
-      zoom: 17,
-      options:{
-        disableDefaultUI:true
-      }
-    };
+  .controller('MainCtrl', function ($scope, MapConfig) {
+    $scope.map={};
+    $scope.map.config = MapConfig.start();
+    $scope.map.refresh = false;
 
     $scope.items = [];
-
 
   });
 

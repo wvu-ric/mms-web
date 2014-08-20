@@ -25,10 +25,17 @@
   text-decoration: none;
 }
 
+.mms-btn-menu.gone{
+  opacity: 1;
+  display:none;
+}
 
 .mms-btn-menu.visible{
   opacity: 1;
+  display: inline;
 }
+
+
 
 // * * * * Menu Navigation * * * * //
 nav.mms-menu {

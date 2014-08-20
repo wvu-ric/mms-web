@@ -56,8 +56,13 @@ header {
   color: #3B3B3E;
   text-decoration: none; }
 
+.mms-btn-menu.gone {
+  opacity: 1;
+  display: none; }
+
 .mms-btn-menu.visible {
-  opacity: 1; }
+  opacity: 1;
+  display: inline; }
 
 nav.mms-menu {
   display: inline;
@@ -150,6 +155,8 @@ footer {
   padding: 10px 15px 5px;
   margin-bottom: 0.5em;
   color: #C0C0C0;
+  border-top: 1px solid #ddd;
+  margin-top: -1px;
   font-size: 12px;
   line-height: 18px; }
 

@@ -31,6 +31,14 @@ div.current-story-container{
     background: #FFFFFF;
     border: 1px solid #ccc;
 
+    .hours{
+      color:#1E1E1F;
+
+      .status{
+        color:#5B5B5E;
+      }
+    }
+
   }
 }
 

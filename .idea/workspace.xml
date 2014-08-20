@@ -35,11 +35,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/partials/footer.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.05958292" vertical-offset="0" max-vertical-offset="1007">
-                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.04468719" vertical-offset="0" max-vertical-offset="1007">
+                  <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
                   <folding>
                     <element signature="n#style#0;n#span#0;n#footer#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#span#1;n#footer#0;n#!!top" expanded="true" />
@@ -51,8 +51,8 @@
           <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
-                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                <state vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="660">
+                  <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -112,11 +112,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3574975" vertical-offset="0" max-vertical-offset="1007">
-                  <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+                <state vertical-scroll-proportion="0.58093345" vertical-offset="0" max-vertical-offset="1095">
+                  <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_footer.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/styles/_footer.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+                  <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -136,7 +146,6 @@
       <list>
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app/styles/_footer.scss" />
         <option value="$PROJECT_DIR$/app/views/partials/nav.html" />
         <option value="$PROJECT_DIR$/app/styles/_base.scss" />
         <option value="$PROJECT_DIR$/app/styles/_menu.scss" />
@@ -155,9 +164,10 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/mapconfig.js" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/views/partials/footer.html" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/styles/_footer.scss" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
       </list>
     </option>
   </component>
@@ -379,7 +389,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="header.scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_header.scss&#10;main.scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;main.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/main.js&#10;footer&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/partials/footer.html&#10;base&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_base.scss&#10;scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_header.scss&#10;main&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;inde&#9;FILE&#9;file:///Users/sam/projects/mms/app/index.html&#10;main.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/main.html&#10;main.&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/main.js&#10;nav.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/partials/nav.html&#10;index&#9;FILE&#9;file:///Users/sam/projects/mms/app/index.html&#10;app.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/app.js" />
+    <property name="SearchEverywhereHistoryKey" value="foot&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_footer.scss&#10;footer&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/partials/footer.html&#10;main.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/main.html&#10;header.scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_header.scss&#10;main.scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;main.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/main.js&#10;base&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_base.scss&#10;scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_header.scss&#10;main&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;inde&#9;FILE&#9;file:///Users/sam/projects/mms/app/index.html&#10;main.&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/main.js&#10;nav.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/partials/nav.html&#10;index&#9;FILE&#9;file:///Users/sam/projects/mms/app/index.html&#10;app.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/app.js" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ShaleWeb" />
   </component>
   <component name="RecentsManager">
@@ -868,22 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04468719" vertical-offset="0" max-vertical-offset="1007">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/components.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
@@ -892,22 +886,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3574975" vertical-offset="0" max-vertical-offset="1007">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="660">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05958292" vertical-offset="0" max-vertical-offset="1007">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.04468719" vertical-offset="0" max-vertical-offset="1007">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#span#0;n#footer#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#footer#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58093345" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

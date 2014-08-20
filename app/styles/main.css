@@ -124,13 +124,8 @@ ul.categories {
 /* Custom page footer */
 footer {
   padding: 10px 15px 5px;
-  color: #777;
-  border-top: 1px solid #e5e5e5; }
-
-.angular-google-map-container {
-  height: 340px; }
-
-footer {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   color: #C0C0C0;
   font-size: 12px;
   line-height: 18px; }
@@ -140,3 +135,41 @@ footer {
   padding-left: 5px;
   padding-right: 5px;
   border: 1px solid #ddd; }
+
+.angular-google-map-container {
+  height: 340px; }
+
+section.categories {
+  line-height: 2.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd; }
+  section.categories a {
+    display: block;
+    width: 100%; }
+
+section.stories {
+  width: 100%;
+  padding-left: 1em; }
+  section.stories article {
+    padding-top: 0.25em;
+    padding-bottom: 0.3em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-bottom: 1px solid #ddd; }
+    section.stories article h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 1em;
+      line-height: 2em; }
+    section.stories article p {
+      margin: 0;
+      padding: 0;
+      font-size: 1em;
+      line-height: 1.5em; }
+    section.stories article p.details {
+      font-size: 0.8em;
+      line-height: 2em;
+      color: #777; }

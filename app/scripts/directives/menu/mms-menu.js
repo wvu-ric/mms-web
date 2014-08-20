@@ -20,7 +20,6 @@ angular.module('mms.components')
         };
 
         function checkRoute(){
-          console.log($route.current);
           if($route.current.loadedTemplateUrl == "views/main.html"){
             $log.debug('mms.components - Root page');
             $scope.isChildPage = false;

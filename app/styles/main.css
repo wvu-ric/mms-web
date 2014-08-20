@@ -1,57 +1,131 @@
-/*
-Syntax error: File to import not found or unreadable: sass-bootstrap/lib/bootstrap.
-              Load path: /Users/sam/projects/mms/app/styles (DEPRECATED)
-        on line 3 of main.scss
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #3B3B3E;
+  padding: 0.2em 0; }
 
-1: $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
-2: 
-3: @import 'sass-bootstrap/lib/bootstrap';
-4: @import "base";
-5: @import "header";
-6: @import "menu";
-7: @import "footer";
+/* Space out content a bit */
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: medium;
+  color: #3B3B3E; }
 
-Backtrace:
-main.scss:3
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/import_node.rb:45:in `import'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/stack.rb:79:in `block in with_base'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/stack.rb:121:in `with_frame'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/stack.rb:79:in `with_base'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:151:in `visit'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/tree/root_node.rb:20:in `render'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/engine.rb:274:in `render'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `each'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/exec.rb:489:in `watch_or_update'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/exec.rb:346:in `process_result'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/exec.rb:43:in `parse'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/lib/sass/exec.rb:22:in `parse!'
-/Users/sam/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.3.7/bin/scss:13:in `<top (required)>'
-/usr/bin/scss:23:in `load'
-/usr/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: sass-bootstrap/lib/bootstrap.\A               Load path: /Users/sam/projects/mms/app/styles (DEPRECATED)\A         on line 3 of main.scss\A \A 1: $icon-font-path: \"/bower_components/sass-bootstrap/fonts/\";\A 2: \A 3: @import 'sass-bootstrap/lib/bootstrap';\A 4: @import \"base\";\A 5: @import \"header\";\A 6: @import \"menu\";\A 7: @import \"footer\";"; }
+h1, h2, h3, h4, h5, h6 {
+  color: #1E1E1F; }
+
+header {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #e5e5e6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  right: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 3; }
+  header .mms-btn-menu {
+    position: absolute;
+    top: 0;
+    left: 0.7em; }
+  header h1 {
+    margin: 0;
+    font-size: 1.2em;
+    padding: 0.60em 0;
+    text-align: center; }
+
+.mms-btn-menu {
+  font-size: 1.4em;
+  padding-top: 0.35em;
+  padding-bottom: 0.35em;
+  display: inline-block;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  opacity: 0;
+  color: #5B5B5E; }
+
+.mms-btn-menu:active {
+  color: #5B5B5E;
+  text-decoration: none; }
+
+.mms-btn-menu:hover {
+  color: #3B3B3E;
+  text-decoration: none; }
+
+.mms-btn-menu.visible {
+  opacity: 1; }
+
+nav.mms-menu {
+  padding-top: 3em;
+  background-color: #FAFAFC;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 15px;
+  top: -100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  border-bottom: 1px solid #e5e5e6;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  /* Chrome, Safari, Opera */
+  backface-visibility: hidden; }
+  nav.mms-menu footer h3 {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px; }
+
+nav.mms-menu.open {
+  top: 0;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0); }
+
+ul.categories {
+  overflow: auto;
+  margin: 0;
+  padding: 4px 0 8px; }
+  ul.categories li {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    padding: 5px 10px; }
+    ul.categories li a {
+      background-color: #23719F;
+      border-radius: 3px;
+      color: #FFF;
+      font-weight: bold;
+      display: block;
+      padding-bottom: 10px; }
+      ul.categories li a .icon {
+        font-size: 48px;
+        color: #E9E3F6; }
+    ul.categories li a:hover, ul.categories li a:active {
+      text-decoration: none;
+      background-color: #1D5C82; }
+  ul.categories li:nth-child(odd) {
+    padding-right: 5px; }
+  ul.categories li:nth-child(even) {
+    padding-left: 5px; }
+
+/* Custom page footer */
+footer {
+  padding: 10px 15px 5px;
+  color: #777;
+  border-top: 1px solid #e5e5e5; }
+
+.angular-google-map-container {
+  height: 400px; }

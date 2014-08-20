@@ -1,7 +1,12 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
-@import 'sass-bootstrap/lib/bootstrap';
+//@import 'sass-bootstrap/lib/bootstrap';
 @import "base";
 @import "header";
 @import "menu";
 @import "footer";
+
+
+.angular-google-map-container {
+  height: 400px;
+}

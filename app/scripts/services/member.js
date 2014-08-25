@@ -8,7 +8,7 @@ angular.module('mms.models')
       var deferred = $q.defer();
       var member =
         {
-          name:"MorgantownBrewingCo",
+          name:"Morgantown Brewing Co",
           id:"1",
           created:1401898727177,
           updated:1401898727177,

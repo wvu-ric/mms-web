@@ -175,17 +175,30 @@ div.current-story-container {
   height: 460px;
   width: 100%;
   display: block;
+  min-height: 60px;
   position: absolute;
   top: 2.8em;
   left: 0;
   right: 0;
-  padding: 0.5em; }
+  padding: 0em; }
   div.current-story-container a {
     text-decoration: none; }
-  div.current-story-container .current-story h1 {
-    padding: 0 0 0 65px; }
-  div.current-story-container .current-story p {
-    padding-left: 65px; }
+  div.current-story-container .current-story {
+    border-radius: 0px;
+    background: #f9f9f9;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 0px solid transparent; }
+    div.current-story-container .current-story h1 {
+      line-height: 2em;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 0 0 0 0px;
+      color: #333;
+      text-align: center; }
+    div.current-story-container .current-story p {
+      padding-left: 0px;
+      font-size: 14px; }
 
 .current-story {
   position: relative;
@@ -209,16 +222,22 @@ div.current-member-container {
   width: 100%;
   display: block;
   position: absolute;
-  bottom: .5em;
+  bottom: -1px;
   left: 0;
-  right: 0;
-  padding: 0.5em; }
+  right: 0; }
   div.current-member-container a {
     text-decoration: none; }
-  div.current-member-container .current-story h1 {
-    padding: 0 0 0 0px; }
-  div.current-member-container .current-story p {
-    padding-left: 0px; }
+  div.current-member-container .current-story {
+    border-top: 1px solid #ccc;
+    background: rgba(249, 249, 249, 0.9);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    min-height: 75px; }
+    div.current-member-container .current-story h1 {
+      padding-left: 65px; }
+    div.current-member-container .current-story p {
+      padding-left: 65px; }
 
 .current-story {
   border-radius: 4px;
@@ -261,17 +280,17 @@ section.categories {
   padding-left: 1em;
   padding-right: 1em;
   text-align: left;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  background-color: #F8F8F8; }
+  border-bottom: 0px solid #ccc;
+  border-top: 0px solid #ccc;
+  background-color: #353131; }
   section.categories a {
     margin-right: 1em;
-    color: #999; }
+    color: #F9f9f9; }
   section.categories a:last-child {
     margin-right: 0em; }
   section.categories a.selected {
-    color: #428bca;
-    font-weight: bold;
+    color: #4A9CE2;
+    font-weight: 600;
     text-decoration: none; }
   section.categories a.selected:hover, section.categories a.selected:focus {
     border-bottom: 3px solid #2a6496; }

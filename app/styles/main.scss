@@ -36,7 +36,7 @@ div.current-story-container{
   .current-story{
     border-radius: 0px;
 
-    background: rgba(249, 249, 249, 1);
+    background: rgba(249, 249, 249, 0.9);
     border-left: 0px solid transparent;
     border-right: 0px solid transparent;
     border-top: 0px solid transparent;
@@ -48,7 +48,7 @@ div.current-story-container{
       font-weight: 600;
       padding : 0 0 0 0px;
       color:#333;
-      text-align: center;
+//      text-align: center;
 
 
     }
@@ -193,6 +193,7 @@ section.categories{
   border-bottom: 0px solid #ccc;
   border-top:0px solid #ccc;
   background-color: #353131;
+  -webkit-font-smoothing: antialiased;
   a{
     margin-right:1em;
     color: #F9f9f9;

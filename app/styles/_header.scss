@@ -1,19 +1,22 @@
 header {
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: 1px solid #e5e5e6;
+  border-bottom: 0px solid #e5e5e6;
   position:fixed;
   top:0;
   width: 100%;
   right:0px;
   left:0px;
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(53, 49, 49, 0.9);
   z-index: 3;
+
+  -webkit-font-smoothing: antialiased;
 
   .mms-btn-menu{
     position:absolute;
     top:0;
     left:0.35em*2;
+    color: #FFF;
   }
 
   h1{
@@ -21,5 +24,6 @@ header {
     font-size: 1.2em;
     padding  : 0.70em 0;
     text-align: center;
+    color: #FFF;
   }
 }

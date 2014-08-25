@@ -3,8 +3,6 @@
 angular.module('mms.models')
   .service('Story', function Story($q) {
     var Story = {};
-
-
     Story.all = function(){
       var deferred = $q.defer();
       var stories = [
@@ -72,7 +70,6 @@ angular.module('mms.models')
 
       return deferred.promise;
     };
-
     Story.where = function(params){
       var deferred = $q.defer();
       var stories = [
@@ -112,6 +109,5 @@ angular.module('mms.models')
 
       return deferred.promise;
     };
-
     return Story;
   });

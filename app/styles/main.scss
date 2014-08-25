@@ -49,6 +49,15 @@ div.current-story-container{
   background-color: #F8F8F8;
 }
 
+.profile{
+  position:absolute;
+  left:0.5em;
+  top:0.5em;
+
+  border-radius: 100%;
+
+}
+
 .current-story{
   position:relative;
 
@@ -60,15 +69,6 @@ div.current-story-container{
   font-size: 1.1em;
 
   padding : 0.3em 0.5em 0.5em;
-
-  .profile{
-    position:absolute;
-    left:0.5em;
-    top:0.5em;
-
-    border-radius: 100%;
-
-  }
 
   h1{
     margin:0;
@@ -146,13 +146,15 @@ section.categories{
   }
 }
 
+$member_image_offset: 50px;
+
 section.stories{
   width: 100%;
   padding-left:1em;
 
   article{
     padding      : 0.25em 1em 0.35em;
-
+    position: relative;
     border-bottom: 1px solid #ccc;
 
     h1{
@@ -160,6 +162,8 @@ section.stories{
       padding:0;
       font-size:1em;
       line-height: 2em;
+      margin-left:$member_image_offset;
+
     }
 
     p{
@@ -167,6 +171,8 @@ section.stories{
       padding:0;
       font-size:1em;
       line-height: 1.5em;
+      margin-left:$member_image_offset;
+
     }
 
     p.content{
@@ -180,6 +186,7 @@ section.stories{
       font-size:0.9em;
       line-height: 2em;
       color:#777;
+
     }
 
   }

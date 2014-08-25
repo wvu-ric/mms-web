@@ -15,23 +15,14 @@
 
 <section class="stories">
 
-  <article>
-    <h1 class="member">MorgantownBrewingCo</h1>
-    <p class="content">Fun at Mountaineer Brewfest in Wheeling! — at Wheeling Heritage Port <a href="http://fb.me/2UBb4mMJd">http://fb.me/2UBb4mMJd</a> </p>
-    <p class="details">18 Aug 2014</p>
-  </article>
 
-  <article>
-    <h1 class="member">MorgantownBrewingCo</h1>
-    <p class="content">NEW ON TAP! Two Fantastic brews! Our Cherry Blonde and much anticipated Oktoberfest! Enjoy a pint or two today! Cheers!</p>
-    <p class="details">16 Aug 2014</p>
-  </article>
+    <article ng-repeat="story in stories" ng-click="selectStory($index)" ng-class="{'expanded':story.expanded}">
+      <img class="profile" ng-src="{{story.image}}" width="40px">
+      <h1 class="member">{{story.author}}</h1>
+      <p class="content" ng-bind-html="story.body"></p>
+      <div class="details">{{story.created | date:'h:mm a • d MMM y'}} <a style="float:right;" ng-href="{{story.sourceUrl}}">Source</a></div>
+    </article>
 
-  <article>
-    <h1 class="member">MorgantownBrewingCo</h1>
-    <p class="content">Happy Friday everyone! Dinner music with Billy Matheny tonight 6-9.</p>
-    <p class="details">15 Aug 2014</p>
-  </article>
 
 </section>
 </div>

@@ -193,6 +193,12 @@ div.current-story-container {
 .member section.stories {
   background-color: #F8F8F8; }
 
+.profile {
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  border-radius: 100%; }
+
 .current-story {
   position: relative;
   border-bottom: 1px solid #ccc;
@@ -200,11 +206,6 @@ div.current-story-container {
   width: 100%;
   font-size: 1.1em;
   padding: 0.3em 0.5em 0.5em; }
-  .current-story .profile {
-    position: absolute;
-    left: 0.5em;
-    top: 0.5em;
-    border-radius: 100%; }
   .current-story h1 {
     margin: 0;
     font-size: 1.1em;
@@ -260,17 +261,20 @@ section.stories {
   padding-left: 1em; }
   section.stories article {
     padding: 0.25em 1em 0.35em;
+    position: relative;
     border-bottom: 1px solid #ccc; }
     section.stories article h1 {
       margin: 0;
       padding: 0;
       font-size: 1em;
-      line-height: 2em; }
+      line-height: 2em;
+      margin-left: 50px; }
     section.stories article p {
       margin: 0;
       padding: 0;
       font-size: 1em;
-      line-height: 1.5em; }
+      line-height: 1.5em;
+      margin-left: 50px; }
     section.stories article .details {
       height: 1px;
       overflow: hidden;

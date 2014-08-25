@@ -12,7 +12,7 @@
 <div class="current-story-container">
   <div class="current-story">
     <a href="#/member/morgantown-brewing-co" style="text-decoration: none;">
-      <img class="profile"  src="http://placehold.it/55x55">
+      <img class="profile"  src="https://pbs.twimg.com/profile_images/481581706156077058/VDkJuMt7.png" width="55px">
       <h1 class="member">MorgantownBrewingCo</h1>
       <p class="hours"><span class="status">Open Now</span> 11am &mdash; 2pm</p>
       <p class="tags"><a>#morgantown</a> <a>#goodbeer</a></p>
@@ -29,7 +29,8 @@
 
 <section class="stories" ng-repeat="story in stories">
 
-  <article ng-click="selectStory($index)" ng-class="{'expanded':story.expanded}">
+  <article>
+    <img class="profile" ng-src="{{story.image}}" width="40px">
     <h1 class="member">{{story.author}}</h1>
     <p class="content" ng-bind-html="story.body"></p>
     <div class="details">{{story.created | date:'h:mm a • d MMM y'}} <a style="float:right;" ng-href="{{story.sourceUrl}}">Source</a></div>

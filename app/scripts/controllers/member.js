@@ -3,10 +3,10 @@
 angular.module('mms')
   .controller('MemberCtrl', function ($scope, Story, Member) {
 
-    //ID pulled from URL
-    $scope.member = 'morgantown-brewing-co';
+    //TODO ID pulled from URL
+    $scope.id = 'morgantown-brewing-co';
 
-    Member.where({id:$scope.member}).then(function(member){
+    Member.where({id:$scope.id}).then(function(member){
       $scope.member = member;
     });
 

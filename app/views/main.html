@@ -11,14 +11,24 @@
 
 <div class="current-story-container">
   <div class="current-story">
-    <a href="#/member/morgantown-brewing-co" style="text-decoration: none;">
-      <img class="profile"  src="https://pbs.twimg.com/profile_images/481581706156077058/VDkJuMt7.png" width="55px">
-      <h1 class="member">MorgantownBrewingCo</h1>
-      <p class="hours"><span class="status">Open Now</span> 11am &mdash; 2pm</p>
-      <p class="tags"><a>#morgantown</a> <a>#goodbeer</a></p>
+    <a href="#/member/morgantown-brewing-co" style="text-decoration: none; color: inherit;">
+      <h1 class="member">{{member.name}}</h1>
+      <p class="description" ng-bind-html="topStory.body"></p>
     </a>
   </div>
+
+  <div class="current-member-container">
+    <div class="current-story">
+      <a href="#/member/morgantown-brewing-co" style="text-decoration: none;">
+        <p class="hours"><span class="status">Open Now</span> {{member.hours['monday']}}</p>
+        <p class="tags"><a ng-repeat="tag in member.hashtags">{{tag}} </a></p>
+      </a>
+    </div>
+  </div>
+
 </div>
+
+
 
 <section class="categories">
   <a class="selected">All</a>

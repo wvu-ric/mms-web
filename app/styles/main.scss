@@ -5,15 +5,19 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import "menu";
 @import "footer";
 
+
+$heading-height:460px;
+
 a{
   cursor: pointer;
 }
 
 .angular-google-map-container {
-  height: 260px;
+  height: $heading-height;
 }
 
 div.current-story-container{
+  height: $heading-height;
 
   width: 100%;
   display:block;
@@ -29,33 +33,17 @@ div.current-story-container{
   }
 
   .current-story{
-    border-radius: 4px;
-    background: #FFFFFF;
-    border: 1px solid #ccc;
+    h1{
 
-    .hours{
-      color:#1E1E1F;
+      padding : 0 0 0 65px;
 
-      .status{
-        color:#5B5B5E;
-      }
     }
 
+    p{
+      padding-left:65px;
 
+    }
   }
-}
-
-.member section.stories{
-  background-color: #F8F8F8;
-}
-
-.profile{
-  position:absolute;
-  left:0.5em;
-  top:0.5em;
-
-  border-radius: 100%;
-
 }
 
 .current-story{
@@ -76,25 +64,82 @@ div.current-story-container{
     font-family: HelveticaNeue-Medium;
     color: #1E1E1F;
     line-height: 1.5em;
-    padding : 0 0 0 65px;
+    padding-left:65px;
 
   }
 
   p{
     margin:0px;
-    padding:0px;
     padding-left:65px;
-
   }
+}
+
+
+div.current-member-container{
+
+  width: 100%;
+  display:block;
+  position:absolute;
+  bottom:.5em;
+  left:0;
+  right:0;
+
+  padding:0.5em;
+
+  a{
+    text-decoration: none;
+  }
+
+  .current-story{
+    h1{
+
+      padding : 0 0 0 0px;
+
+    }
+
+    p{
+      padding-left:0px;
+
+    }
+  }
+}
+
+.current-story{
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #ccc;
+
+  .hours{
+    color:#1E1E1F;
+
+    .status{
+      color:#5B5B5E;
+    }
+  }
+
+
+}
+
+.member section.stories{
+  background-color: #F8F8F8;
+}
+
+.profile{
+  position:absolute;
+  left:0.5em;
+  top:0.5em;
+
+  border-radius: 100%;
+
 }
 
 .member-actions{
 
-  padding  : 7px 1em;
+  padding: 7px 1em;
   font-size: 1em;
   text-align: center;
   border-bottom: 1px solid #ccc;
-//  background-color: #DFDFDF;
+  margin: 0;
 
   a{
     display: inline-block;
@@ -138,7 +183,7 @@ section.categories{
     color:#428bca;
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 3px solid #428bca;
+//    border-bottom: 3px solid #428bca;
   }
 
   a.selected:hover, a.selected:focus{
@@ -186,6 +231,7 @@ section.stories{
       font-size:0.9em;
       line-height: 2em;
       color:#777;
+      margin-left:$member_image_offset;
 
     }
 
@@ -197,4 +243,38 @@ section.stories{
     }
   }
 }
+
+  .images{
+    width:100%;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position:relative;
+    background-color: #000;
+//    height:150px;
+    display:inline-block;
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+
+
+    .image{
+      max-width:33%;
+      display:inline-block;
+//      float:left;
+      text-align: left;
+
+      img{
+        max-width: 100%;
+        width:auto;
+        max-height:150px;
+        padding-left: 5px;
+      }
+    }
+
+
+  }
+
 

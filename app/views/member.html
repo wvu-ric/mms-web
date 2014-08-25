@@ -1,21 +1,28 @@
 <div class="member">
 <div class="current-story">
-  <img class="profile"  src="http://placehold.it/55x55">
-
+  <img class="profile" ng-src="{{member.icon}}" width="55px">
   <h1 class="member">{{member.name}}</h1>
-  <p class="hours"><span class="status">Open Now</span> 11am &mdash; 2pm</p>
-  <p class="tags"><a>#morgantown</a> <a>#goodbeer</a></p>
+  <p class="description" ng-bind-html="member.description"></p>
+
+  <!--Todo: Open/hours logic-->
+  <p class="hours"><span class="status">Open Now</span> {{member.hours['monday']}}</p>
+  <p class="tags"><a ng-repeat="tag in member.hashtags">{{tag}} </a></p>
 </div>
 
+  <div class="images">
+    <div class="image" ng-repeat="image in member.images | limitTo:4">
+      <img ng-src="{{image}}">
+    </div>
+    <div class="clearfix"></div>
+  </div>
 
 <div class="member-actions">
   <a>Website</a>
   <a>Directions</a>
-  <a>More Like This</a>
+  <a>More Nightlife</a>
 </div>
 
 <section class="stories">
-
 
     <article ng-repeat="story in stories" ng-click="selectStory($index)" ng-class="{'expanded':story.expanded}">
       <img class="profile" ng-src="{{story.image}}" width="40px">
@@ -23,7 +30,6 @@
       <p class="content" ng-bind-html="story.body"></p>
       <div class="details">{{story.created | date:'h:mm a • d MMM y'}} <a style="float:right;" ng-href="{{story.sourceUrl}}">Source</a></div>
     </article>
-
 
 </section>
 </div>

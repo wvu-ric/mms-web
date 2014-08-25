@@ -11,15 +11,15 @@ angular.module('mms.models')
           authorId:"1",
           images:[],
           links:["https://twitter.com/MgtnBrewCo/status/502166523654717440"],
-          location:[],
           hashtags:[],
           sourceType:"Twitter",
           sourceUrl:"https://twitter.com/MgtnBrewCo/status/502166523654717440",
           highlighted:false,
           created:1401898727177,
           updated:1401898727177,
-          body:"NEW ON TAP THIS FRIDAY! Our First Shift Coffee Porter! Need something to bring you out of that long hibernation?... http://fb.me/1B8sdsOAq ",
-          image:"https://pbs.twimg.com/profile_images/481581706156077058/VDkJuMt7.png"
+          body:"NEW ON TAP THIS FRIDAY! Our First Shift Coffee Porter! Need something to bring you out of that long hibernation?... <a href='http://fb.me/1B8sdsOAq'>http://fb.me/1B8sdsOAq </a>",
+          image:"https://pbs.twimg.com/profile_images/481581706156077058/VDkJuMt7.png",
+          location:[39.630454, -79.957934]
         },
         {
           author:"MorgantownBrewingCo",
@@ -85,7 +85,7 @@ angular.module('mms.models')
           highlighted:false,
           created:1401898727177,
           updated:1401898727177,
-          body:"NEW ON TAP THIS FRIDAY! Our First Shift Coffee Porter! Need something to bring you out of that long hibernation?... http://fb.me/1B8sdsOAq ",
+          body:"NEW ON TAP THIS FRIDAY! Our First Shift Coffee Porter! Need something to bring you out of that long hibernation?... <a href='http://fb.me/1B8sdsOAq'>http://fb.me/1B8sdsOAq </a>",
           image:"https://pbs.twimg.com/profile_images/481581706156077058/VDkJuMt7.png"
         },
         {

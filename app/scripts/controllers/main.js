@@ -1,18 +1,25 @@
 'use strict';
 
 angular.module('mms')
-  .controller('MainCtrl', function ($scope, MapConfig, Story) {
+  .controller('MainCtrl', function ($scope, MapConfig, Story, Member) {
+
     $scope.map={};
     $scope.map.config = MapConfig.start();
     $scope.map.refresh = false;
 
     Story.all().then(function(stories){
       $scope.stories = stories;
+      $scope.topStory = $scope.stories[0];
     });
 
     $scope.selectStory = function(index){
-      $scope.stories[index].expanded = true;
+      $scope.topStory = $scope.stories[index];
     };
+
+    Member.where({id:$scope.id}).then(function(member){
+      $scope.member = member;
+    });
+
   });
 
 'use strict';

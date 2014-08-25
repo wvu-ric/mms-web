@@ -24,6 +24,10 @@ div.current-story-container{
 
   padding:0.5em;
 
+  a{
+    text-decoration: none;
+  }
+
   .current-story{
     border-radius: 4px;
     background: #FFFFFF;
@@ -36,6 +40,7 @@ div.current-story-container{
         color:#5B5B5E;
       }
     }
+
 
   }
 }
@@ -168,12 +173,21 @@ section.stories{
 
     }
 
-    p.details{
-      font-size:0.8em;
+    .details{
+      height:1px;
+      overflow: hidden;
+
+      font-size:0.9em;
       line-height: 2em;
       color:#777;
     }
 
+  }
+
+  article.expanded{
+    .details{
+      height:auto;
+    }
   }
 }
 

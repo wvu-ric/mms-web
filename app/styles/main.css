@@ -179,6 +179,8 @@ div.current-story-container {
   left: 0;
   right: 0;
   padding: 0.5em; }
+  div.current-story-container a {
+    text-decoration: none; }
   div.current-story-container .current-story {
     border-radius: 4px;
     background: #FFFFFF;
@@ -269,7 +271,11 @@ section.stories {
       padding: 0;
       font-size: 1em;
       line-height: 1.5em; }
-    section.stories article p.details {
-      font-size: 0.8em;
+    section.stories article .details {
+      height: 1px;
+      overflow: hidden;
+      font-size: 0.9em;
       line-height: 2em;
       color: #777; }
+  section.stories article.expanded .details {
+    height: auto; }

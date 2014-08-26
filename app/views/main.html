@@ -5,40 +5,47 @@
     zoomable="false"
     options="map.config.options"
     refresh="map.refresh">
-    <marker coords="map.config.center" icon="'/images/location.png'" idKey="1">
-    </marker>
+    <!--<marker coords="map.config.center" icon="'/images/location.png'" idKey="1">-->
+    <!--</marker>-->
 </google-map>
 
 
-<div class="current-story-container">
-     <!--style="background-image: url('https://pbs.twimg.com/media/BsxILezCcAADg6q.jpg'); background-size: cover; background-position: center center;"-->
-
-  <div class="current-story">
-    <a href="#/member/morgantown-brewing-co" style="text-decoration: none; color: inherit;">
-      <h1 class="member">{{member.name}}</h1>
+<div class="top-story-container">
+  <div class="top-story-overlay">
+    <article>
+      <span class="category">Nightlife</span>
+      <h1>{{member.name}}</h1>
       <p class="description" ng-bind-html="topStory.body"></p>
-    </a>
-  </div>
 
-  <div class="current-member-container">
-    <div class="current-story">
-      <a href="#/member/morgantown-brewing-co" style="text-decoration: none;">
-        <img class="profile" ng-src="{{member.icon}}" width="55px">
-        <p class="hours"><span class="status">Open Now</span> {{member.hours['monday']}}</p>
-        <p class="tags"><a ng-repeat="tag in member.hashtags">{{tag}} </a></p>
-      </a>
-    </div>
-  </div>
+      <hr>
 
+      <p class="details">
+        <span class="status">
+          Open now
+        </span>
+        <span class="hours">
+          {{member.hours['monday']}}
+        </span>
+        <span class="metadata">
+          <span ng-repeat="tag in member.hashtags">{{tag}} </span>
+        </span>
+      </p>
+
+
+      <div class="to-right">
+        <i class="fa fa-chevron-right"></i>
+      </div>
+
+    </article>
+
+  </div>
 </div>
-
-
 
 <section class="categories">
   <a class="selected">All</a>
-  <a>Food & Drink</a>
+  <a>Restaurants</a>
   <a>Nightlife</a>
-  <a>More...</a>
+  <a>More</a>
 </section>
 
 <section class="stories" ng-repeat="story in stories">

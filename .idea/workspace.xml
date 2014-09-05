@@ -55,11 +55,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="mms-header.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="mms-header.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scripts/directives/header/mms-header.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3649635" vertical-offset="0" max-vertical-offset="822">
-                  <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+                <state vertical-scroll-proportion="0.20072992" vertical-offset="0" max-vertical-offset="822">
+                  <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -109,11 +109,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_base.scss" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="_base.scss" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/styles/_base.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.21796565" vertical-offset="0" max-vertical-offset="757">
-                  <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+                <state vertical-scroll-proportion="0.2972259" vertical-offset="0" max-vertical-offset="757">
+                  <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -187,8 +187,8 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/directives/header/mms-header.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/menu/mms-menu.html" />
-        <option value="$PROJECT_DIR$/app/scripts/directives/header/mms-header.html" />
         <option value="$PROJECT_DIR$/app/styles/_base.scss" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/header/mms-header.html" />
       </list>
     </option>
   </component>
@@ -960,18 +960,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/header/mms-header.html">
+    <entry file="file://$PROJECT_DIR$/app/styles/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3649635" vertical-offset="0" max-vertical-offset="822">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.2972259" vertical-offset="0" max-vertical-offset="757">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_base.scss">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/header/mms-header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21796565" vertical-offset="0" max-vertical-offset="757">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.20072992" vertical-offset="0" max-vertical-offset="822">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>

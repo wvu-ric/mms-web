@@ -73,9 +73,15 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <mms-header title="Morgantown" description="" categories=""></mms-header>
-    <div ng-view=""></div>
-    <div ng-include="'/views/partials/footer.html'"></div>
+    <mms-menu open="menuOpen">
+
+    </mms-menu>
+
+    <div id="main">
+      <mms-header title="Morgantown"></mms-header>
+      <div ng-view=""></div>
+      <div ng-include="'/views/partials/footer.html'"></div>
+    </div>
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -104,15 +110,14 @@
     <script src="scripts/controllers/main.js"></script>
 
     <script src="scripts/directives/components.js"></script>
-    <script src="scripts/directives/menu/mms-menu.js"></script>
 
     <script src="scripts/services/models.js"></script>
     <script src="scripts/services/community.js"></script>
     <script src="scripts/services/user.js"></script>
     <script src="scripts/services/member.js"></script>
     <script src="scripts/services/story.js"></script>
-    <script src="scripts/services/MapConfig.js"></script>
-    <script src="scripts/controllers/Member.js"></script>
+    <script src="scripts/services/mapconfig.js"></script>
+    <script src="scripts/controllers/member.js"></script>
     <script src="scripts/directives/header/mms-header.js"></script>
     <script src="scripts/directives/menu/mms-menu.js"></script>
 

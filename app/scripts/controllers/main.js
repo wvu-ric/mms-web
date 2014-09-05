@@ -26,5 +26,12 @@ angular.module('mms')
 
 angular.module('mms')
   .controller('RootCtrl', function ($scope) {
-    $scope.categories = ['Startups', 'Design', 'Funding', 'Business'];
+
+    $scope.menuOpen = false;
+
+    $scope.toggleMenu = function(){
+      $scope.menuOpen = !$scope.menuOpen;
+    };
+
+
   });

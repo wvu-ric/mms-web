@@ -27,3 +27,40 @@ header {
     color: #FFF;
   }
 }
+
+// * * * * Menu Button * * * * //
+.mms-btn-menu{
+  font-size: 1.4em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  display: inline-block;
+
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+
+  opacity: 0;
+  color: #F7F7FF;
+}
+
+.mms-btn-menu:active{
+  color: #F7F7FF;
+  text-decoration: none;
+}
+
+.mms-btn-menu:hover{
+  color: #F7F7FF;
+  text-decoration: none;
+}
+
+.mms-btn-menu.gone{
+  opacity: 1;
+  display:none;
+}
+
+.mms-btn-menu.visible{
+  opacity: 1;
+  display: inline;
+}

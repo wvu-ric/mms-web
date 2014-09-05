@@ -1,39 +1,31 @@
-<header>
-  <a ng-click="toggleMenu()" class="mms-btn-menu" ng-class="{visible:!menuOpen&&!isChildPage}"><i class="fa fa-bars"></i> </a>
-  <a ng-click="toggleMenu()" class="mms-btn-menu" ng-class="{visible:menuOpen&&!isChildPage}"><i class="fa fa-times"></i> </a>
-  <a ng-click="back()" class="mms-btn-menu gone" ng-class="{visible:isChildPage}"><i class="glyphicon glyphicon-chevron-left"></i> </a>
-
-  <h1>{{title}}</h1>
-</header>
-
 <nav class="mms-menu" ng-class="{open:menuOpen}">
   <div class="nav-contents">
 
-  <ul class="categories">
-    <li><a ng-href=""><div class="icon"><i class="fa fa-home"></i></div>All Categories</a></li>
-    <li><a ng-href=""><div class="icon"><i class="fa fa-spoon"></i></div>Food & Drink</a></li>
-    <li><a ng-href=""><div class="icon"><i class="fa fa-glass"></i></div>Nightlife</a></li>
-    <li><a ng-href=""><div class="icon"><i class="fa fa-shopping-cart"></i></div>Shopping</a></li>
-    <li><a ng-href=""><div class="icon"><i class="fa fa-ticket"></i></div>Attractions</a></li>
-    <li><a ng-href=""><div class="icon"><i class="fa fa-users"></i></div>Services</a></li>
-  </ul>
-  <section class="about">
-    <h1>About</h1>
+    <ul class="categories">
+      <li><a ng-href=""><div class="icon"><i class="fa fa-home"></i></div>All Categories</a></li>
+      <li><a ng-href=""><div class="icon"><i class="fa fa-spoon"></i></div>Food & Drink</a></li>
+      <li><a ng-href=""><div class="icon"><i class="fa fa-glass"></i></div>Nightlife</a></li>
+      <li><a ng-href=""><div class="icon"><i class="fa fa-shopping-cart"></i></div>Shopping</a></li>
+      <li><a ng-href=""><div class="icon"><i class="fa fa-ticket"></i></div>Attractions</a></li>
+      <li><a ng-href=""><div class="icon"><i class="fa fa-users"></i></div>Services</a></li>
+    </ul>
+    <section class="about">
+      <h1>About</h1>
 
-    <article class="description">
-      <p>
-        Whether you’re in town for a conference at the Waterfront Place Hotel, attending a WVU Football or Basketball game, or exploring the great outdoors, Morgantown is a city that has something for everyone.
-      </p>
-      <p>
-        Within a 500-mile radius of Morgantown is one-half of the population of the United States and one-third of the population of Canada. Morgantown is one day’s drive from 6 of the 8 largest U.S. metropolitan areas, 20 metro areas with populations of 1 million or more, and 22 of the nation’s top 35 industrial markets.
-      </p>
-    </article>
+      <article class="description">
+        <p>
+          Whether you’re in town for a conference at the Waterfront Place Hotel, attending a WVU Football or Basketball game, or exploring the great outdoors, Morgantown is a city that has something for everyone.
+        </p>
+        <p>
+          Within a 500-mile radius of Morgantown is one-half of the population of the United States and one-third of the population of Canada. Morgantown is one day’s drive from 6 of the 8 largest U.S. metropolitan areas, 20 metro areas with populations of 1 million or more, and 22 of the nation’s top 35 industrial markets.
+        </p>
+      </article>
 
 
-    <a href="/">Learn more <i class="fa fa-arrow-circle-right"></i> </a>
-  </section>
+      <a href="/">Learn more <i class="fa fa-arrow-circle-right"></i> </a>
+    </section>
 
-  <div ng-include="'/views/partials/footer.html'"></div>
+    <div ng-include="'/views/partials/footer.html'"></div>
   </div>
 
 </nav>

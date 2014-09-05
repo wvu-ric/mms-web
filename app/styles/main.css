@@ -4,7 +4,6 @@
   color: #3B3B3E;
   padding: 0.2em 0; }
 
-/* Space out content a bit */
 body {
   padding: 0px;
   margin: 0px;
@@ -48,14 +47,14 @@ header {
   -ms-transition: all .3s ease-out;
   transition: all .3s ease-out;
   opacity: 0;
-  color: #5B5B5E; }
+  color: #F7F7FF; }
 
 .mms-btn-menu:active {
   color: #F7F7FF;
   text-decoration: none; }
 
 .mms-btn-menu:hover {
-  color: #3B3B3E;
+  color: #F7F7FF;
   text-decoration: none; }
 
 .mms-btn-menu.gone {
@@ -69,14 +68,12 @@ header {
 nav.mms-menu {
   display: inline;
   padding-top: 3em;
-  background-color: #FAFAFC;
+  background-color: #2E2D30;
   position: absolute;
-  width: 100%;
-  top: -2000px;
-  left: 0;
+  width: 80%;
+  top: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  left: -180%;
   z-index: 2;
   border-bottom: 1px solid #e5e5e6;
   -webkit-transition: all .3s ease-out;
@@ -95,7 +92,7 @@ nav.mms-menu {
     padding-bottom: 10px; }
 
 nav.mms-menu.open {
-  top: 0;
+  left: 0;
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0); }
 
@@ -104,16 +101,16 @@ ul.categories {
   margin: 0;
   padding: 4px 0 8px; }
   ul.categories li {
-    width: 50%;
-    display: inline-block;
+    width: 100%;
+    display: block;
     float: left;
     text-align: center;
     padding: 5px 10px; }
     ul.categories li a {
       border: 1px solid #eee;
-      background-color: #FFF;
+      background-color: #4E4D52;
       border-radius: 3px;
-      color: #333;
+      color: #FFF;
       font-weight: bold;
       display: block;
       padding-bottom: 10px; }
@@ -122,12 +119,8 @@ ul.categories {
         color: #428bca; }
     ul.categories li a:hover, ul.categories li a:active {
       text-decoration: none;
-      background-color: #FAFAFC;
+      background-color: #4E4D52;
       border: 1px solid #428bca; }
-  ul.categories li:nth-child(odd) {
-    padding-right: 5px; }
-  ul.categories li:nth-child(even) {
-    padding-left: 5px; }
 
 section.about {
   padding-left: 1em;

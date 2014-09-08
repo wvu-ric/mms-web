@@ -73,11 +73,12 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <mms-menu open="menuOpen">
 
-    </mms-menu>
 
-    <div id="main" class="menu-open">
+    <div id="main" ng-class="{'menu-open':$root.menuOpen}">
+      <mms-menu open="menuOpen">
+
+      </mms-menu>
       <mms-header title="Morgantown"></mms-header>
       <div ng-view=""></div>
       <div ng-include="'/views/partials/footer.html'"></div>

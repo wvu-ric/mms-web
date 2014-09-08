@@ -2,12 +2,12 @@
 
   <a ng-click="toggleMenu()"
      class="mms-btn-menu"
-     ng-class="{visible:!menuOpen&&!isChildPage}">
+     ng-class="{visible:!$root.menuOpen&&!isChildPage}">
     <i class="fa fa-bars"></i>
   </a>
   <a ng-click="toggleMenu()"
      class="mms-btn-menu"
-     ng-class="{visible:menuOpen&&!isChildPage}">
+     ng-class="{visible:$root.menuOpen&&!isChildPage}">
     <i class="fa fa-times"></i>
   </a>
   <a ng-click="back()"

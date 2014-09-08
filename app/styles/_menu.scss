@@ -1,3 +1,6 @@
+$mms-menu-open-time: 0.1s;
+$mms-menu-open-timing-function: linear;
+
 // * * * * Menu Navigation * * * * //
 .mms-menu {
   -webkit-font-smoothing: antialiased;
@@ -8,27 +11,10 @@
   //Todo: set offset in JS
   top:0;
   right:0;
-  left:-180%;
+  left:-80%;
   z-index: 4;
-  border-bottom: 1px solid #e5e5e6;
   min-height: 100%;
-
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-  transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-backface-visibility:hidden; /* Chrome, Safari, Opera */
-  backface-visibility:hidden;
-
-}
-
-.mms-menu.menu-open {
-  left:0;
-  transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
+  width:80%;
 }
 
 // * * * * Categories List * * * * //
@@ -83,12 +69,18 @@ ul.menu-items{
 }
 
 #main{
+ position: absolute;
   background-color: #fff;
-  -webkit-transition: all .2s ease-in-out;
+  -webkit-transition: all $mms-menu-open-time $mms-menu-open-timing-function;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility:hidden; /* Chrome, Safari, Opera */
+  backface-visibility:hidden;
+  left:0;
+  width:100%;
+
 }
 
 #main.menu-open{
-  position: absolute;
   left:80%;
-  width:100%;
 }

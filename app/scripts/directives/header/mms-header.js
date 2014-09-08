@@ -8,13 +8,13 @@ angular.module('mms.components')
         title:"@"
       },
       templateUrl:'/scripts/directives/header/mms-header.html',
-      link: function postLink(scope, element, attrs) {
-      },
+      link: function postLink(scope, element, attrs) {},
       controller:function($scope, $log, $rootScope, $route, $location){
-        $scope.menuOpen = false;
+
         $scope.toggleMenu = function(){
-          $log.debug('mms.components - Menu toggled');
-          $scope.menuOpen = !$scope.menuOpen;
+          $rootScope.menuOpen = !$rootScope.menuOpen;
+          $log.debug('mms.components - Menu toggled '+$rootScope.menuOpen);
+
         };
 
         function checkRoute(){

@@ -1,31 +1,49 @@
-<nav class="mms-menu" ng-class="{open:menuOpen}">
+<nav class="mms-menu menu-open" ng-class="{'menu-open':menuOpen}">
   <div class="nav-contents">
 
-    <ul class="categories">
-      <li><a ng-href=""><div class="icon"><i class="fa fa-home"></i></div>All Categories</a></li>
-      <li><a ng-href=""><div class="icon"><i class="fa fa-spoon"></i></div>Food & Drink</a></li>
-      <li><a ng-href=""><div class="icon"><i class="fa fa-glass"></i></div>Nightlife</a></li>
-      <li><a ng-href=""><div class="icon"><i class="fa fa-shopping-cart"></i></div>Shopping</a></li>
-      <li><a ng-href=""><div class="icon"><i class="fa fa-ticket"></i></div>Attractions</a></li>
-      <li><a ng-href=""><div class="icon"><i class="fa fa-users"></i></div>Services</a></li>
-    </ul>
-    <section class="about">
-      <h1>About</h1>
-
-      <article class="description">
+    <ul class="menu-items">
+      <li class="menu-section-title first">
+        Categories
+      </li>
+      <li>
+        <a ng-href="">All</a>
+      </li>
+      <li>
+        <a ng-href="">Food & Drink</a>
+      </li>
+      <li>
+        <a ng-href="">Nightlife</a>
+      </li>
+      <li>
+        <a ng-href="">Shopping</a>
+      </li>
+      <li>
+        <a ng-href="">Attractions</a>
+      </li>
+      <li>
+        <a ng-href="">Services</a>
+      </li>
+      <li class="menu-section-title">
+        About Morgantown, WV
+      </li>
+      <li>
         <p>
           Whether you’re in town for a conference at the Waterfront Place Hotel, attending a WVU Football or Basketball game, or exploring the great outdoors, Morgantown is a city that has something for everyone.
         </p>
-        <p>
-          Within a 500-mile radius of Morgantown is one-half of the population of the United States and one-third of the population of Canada. Morgantown is one day’s drive from 6 of the 8 largest U.S. metropolitan areas, 20 metro areas with populations of 1 million or more, and 22 of the nation’s top 35 industrial markets.
-        </p>
-      </article>
+      </li>
+      <li>
+        <a href="/">Learn more <i class="fa fa-chevron-right" style="font-size: 16px;"></i> </a>
+      </li>
+      <li class="menu-section-title">
+        Account
+      </li>
+      <li>
+        <a ng-href="">Request an Invite</a>
+      </li>
+      <li>
+        <a ng-href="">Login</a>
+      </li>
 
-
-      <a href="/">Learn more <i class="fa fa-arrow-circle-right"></i> </a>
-    </section>
-
-    <div ng-include="'/views/partials/footer.html'"></div>
-  </div>
+    </ul>
 
 </nav>

@@ -33,5 +33,4 @@ angular.module('mms')
       $scope.menuOpen = !$scope.menuOpen;
     };
 
-
   });

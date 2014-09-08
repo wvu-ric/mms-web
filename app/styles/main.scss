@@ -5,9 +5,16 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import "menu";
 @import "footer";
 
-
 $heading-height:460px;
 $blue:#4A90E2;
+
+html, body{
+  background-color: #3B3B3E;
+  overflow:hidden;
+}
+
+
+
 
 a{
   cursor: pointer;

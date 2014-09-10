@@ -70,16 +70,20 @@ ul.menu-items {
   position                    : absolute;
   background-color            : #FFF;
   -webkit-transition          : all $mms-menu-open-time $mms-menu-open-timing-function;
-  transform                   : translate3d(0, 0, 0);
-  -webkit-transform           : translate3d(0, 0, 0);
-  -webkit-backface-visibility : hidden; /* Chrome, Safari, Opera */
+
+  -webkit-backface-visibility : hidden;
   backface-visibility         : hidden;
+
   left                        : 0;
   width                       : 100%;
 
+  transform                   : translate3d(0, 0, 0);
+  -webkit-transform           : translate3d(0, 0, 0);
 }
 
 #main.menu-open {
-  left : 80%;
+
+  transform                   : translate3d(80%, 0, 0);
+  -webkit-transform           : translate3d(80%, 0, 0);
 
 }

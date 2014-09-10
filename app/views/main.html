@@ -5,8 +5,6 @@
     zoomable="false"
     options="map.config.options"
     refresh="map.refresh">
-    <!--<marker coords="map.config.center" icon="'/images/location.png'" idKey="1">-->
-    <!--</marker>-->
 </google-map>
 
 
@@ -48,9 +46,9 @@
   <a>More</a>
 </section>
 
-<section class="stories" ng-repeat="story in stories">
+<section class="stories">
 
-  <article>
+  <article ng-repeat="story in stories" ng-click="selectStory($index)">
     <img class="profile" ng-src="{{story.image}}" width="40px">
     <h1 class="member">{{story.author}}</h1>
     <p class="content" ng-bind-html="story.body"></p>

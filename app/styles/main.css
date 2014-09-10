@@ -70,7 +70,6 @@ header {
   display: inline;
   background-color: #2E2D30;
   position: absolute;
-  width: 80%;
   top: 0;
   right: 0;
   left: -80%;
@@ -93,12 +92,12 @@ ul.menu-items {
     ul.menu-items li a {
       font-size: 20px;
       line-height: 40px;
-      color: #ccc; }
+      color: #CCC; }
     ul.menu-items li a:hover, ul.menu-items li a:active {
-      color: #fff;
+      color: #FFF;
       text-decoration: none; }
     ul.menu-items li p {
-      color: #ccc; }
+      color: #CCC; }
   ul.menu-items li.menu-section-title {
     color: #717175;
     line-height: 40px;
@@ -113,7 +112,7 @@ ul.menu-items {
 
 #main {
   position: absolute;
-  background-color: #fff;
+  background-color: #FFF;
   -webkit-transition: all 0.1s linear;
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -147,8 +146,7 @@ footer {
   border: 1px solid #ccc; }
 
 html, body {
-  background-color: #3B3B3E;
-  overflow: hidden; }
+  background-color: #3B3B3E; }
 
 a {
   cursor: pointer; }
@@ -242,19 +240,19 @@ div.top-story-container {
   padding: 7px 1em;
   font-size: 1em;
   text-align: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #CCC;
   margin: 0; }
   .member-actions a {
     display: inline-block;
     padding: 3px 0.75em;
-    background-color: #428bca;
+    background-color: #428BCA;
     border-radius: 3px;
     color: #FFF;
     text-transform: capitalize; }
   .member-actions a:hover, .member-actions a:active {
     text-decoration: none;
     color: #FFF;
-    background-color: #2a6496; }
+    background-color: #2A6496; }
 
 section.categories {
   line-height: 2.4em;
@@ -262,8 +260,8 @@ section.categories {
   font-size: 1.2em;
   padding-right: 1em;
   text-align: left;
-  border-bottom: 0px solid #ccc;
-  border-top: 0px solid #ccc;
+  border-bottom: 0px solid #CCC;
+  border-top: 0px solid #CCC;
   background-color: #3B3B3E;
   -webkit-font-smoothing: antialiased; }
   section.categories a {
@@ -283,7 +281,7 @@ section.stories {
   section.stories article {
     padding: 0.25em 1em 0.35em;
     position: relative;
-    border-bottom: 1px solid #ccc; }
+    border-bottom: 1px solid #CCC; }
     section.stories article h1 {
       margin: 0;
       padding: 0;

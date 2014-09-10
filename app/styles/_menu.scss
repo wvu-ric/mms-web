@@ -68,22 +68,19 @@ ul.menu-items {
 
 #main {
   position                    : absolute;
-  background-color            : #FFF;
-  -webkit-transition          : all $mms-menu-open-time $mms-menu-open-timing-function;
-
-  -webkit-backface-visibility : hidden;
-  backface-visibility         : hidden;
-
   left                        : 0;
   width                       : 100%;
+  background-color            : #FFF;
+
+  -webkit-transition: -webkit-transform 200ms ease;
+  -moz-transition: -moz-transform 200ms ease;
+  transition: transform 200ms ease;
 
   transform                   : translate3d(0, 0, 0);
   -webkit-transform           : translate3d(0, 0, 0);
 }
 
 #main.menu-open {
-
   transform                   : translate3d(80%, 0, 0);
   -webkit-transform           : translate3d(80%, 0, 0);
-
 }

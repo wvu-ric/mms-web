@@ -15,6 +15,10 @@ angular.module('mms', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/category/:id', {
+        templateUrl: 'views/category.html',
+        controller: 'CategoryCtrl'
+      })
       .when('/member/:id', {
         templateUrl: 'views/member.html',
         controller: 'MemberCtrl'

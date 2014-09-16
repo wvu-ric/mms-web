@@ -10,7 +10,8 @@
 
 <div class="top-story-container">
   <div class="top-story-overlay">
-    <article>
+
+    <article class="featured">
       <span class="category">Nightlife</span>
       <h1>{{member.name}}</h1>
       <p class="description" ng-bind-html="topStory.body"></p>
@@ -33,7 +34,6 @@
       <div class="to-right">
         <i class="fa fa-chevron-right"></i>
       </div>
-
     </article>
 
   </div>
@@ -48,7 +48,7 @@
 
 <section class="stories">
 
-  <article ng-repeat="story in stories" ng-click="selectStory($index)">
+  <article ng-repeat="story in stories" ng-click="setTopStory($index)" ng-class="storyClass($index)">
     <img class="profile" ng-src="{{story.image}}" width="40px">
     <h1 class="member">{{story.author}}</h1>
     <p class="content" ng-bind-html="story.body"></p>

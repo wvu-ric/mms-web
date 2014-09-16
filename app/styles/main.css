@@ -1,16 +1,16 @@
 .browsehappy {
   margin: 0.2em 0;
-  background: #ccc;
-  color: #3B3B3E;
+  background: #c7c7d1;
+  color: #373b3e;
   padding: 0.2em 0; }
 
 body {
   padding: 0px;
   margin: 0px;
-  color: #3B3B3E; }
+  color: #373b3e; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #1E1E1F; }
+  color: #1e1e1f; }
 
 header {
   padding-left: 15px;
@@ -68,7 +68,7 @@ header {
 .mms-menu {
   -webkit-font-smoothing: antialiased;
   display: inline;
-  background-color: #2E2D30;
+  background-color: #232526;
   position: absolute;
   top: 0;
   right: 0;

@@ -1,16 +1,57 @@
+// Z-Index Scale
+// --------------------------------------------------
+$zIndex-1:    100;
+$zIndex-2:    200;
+$zIndex-3:    300;
+$zIndex-4:    400;
+$zIndex-5:    500;
+$zIndex-6:    600;
+$zIndex-7:    700;
+$zIndex-8:    800;
+$zIndex-9:    900;
+$zIndex-10:   1000;
+
+// Z-Index Applications
+// --------------------------------------------------
+$zIndex-1--screenForeground:        $zIndex-1;
+
+// Color Scale
+// --------------------------------------------------
+$black:         #1E1E1F;
+$darker-grey:   #232526;
+$dark-grey:     #373B3E;
+$grey:          #5B5B5E;
+$light-grey:    #717175;
+$lighter-grey:  #C7C7D1;
+$white:         #FFFFFF;
+
+// Font Scale
+// --------------------------------------------------
+$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$type-micro:     400 .85em / 1.6em $helvetica;
+$type-smallest:  500 1.0em / 1.5em $helvetica;
+$type-smaller:   400 1.2em / 1.1em $helvetica;
+$type-small:     500 1.2em / 1.1em $helvetica;
+$type-base:      400 1.3em / 1.1em $helvetica;
+$type-large:     500 1.3em / 1.1em $helvetica;
+$type-larger:    700 1.3em / 1.1em $helvetica;
+$type-largest:   400 1.4em / 1.1em $helvetica;
+
+
 .browsehappy {
   margin: 0.2em 0;
-  background: #ccc;
-  color: #3B3B3E;
+  background: $lighter-grey;
+  color: $dark_grey;
   padding: 0.2em 0;
 }
 
 body {
   padding: 0px;
   margin: 0px;
-  color: #3B3B3E;
+  color: $dark_grey;
 }
 
 h1, h2, h3, h4, h5, h6{
-  color: #1E1E1F;
+  color: $black;
 }

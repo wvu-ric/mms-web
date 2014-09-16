@@ -7,7 +7,8 @@ angular.module('mms', [
   'ngRoute',
   'google-maps',
   'mms.components',
-  'mms.models'
+  'mms.models',
+  'mms.mocks'
 ])
   .config(function ($routeProvider) {
     $routeProvider

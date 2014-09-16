@@ -1,113 +1,62 @@
 'use strict';
 
-angular.module('mms.models')
-  .service('Story', function Story($q) {
-    var Story = {};
-    Story.all = function(){
-      var deferred = $q.defer();
-      var stories = [
-        {
-          author:"MorgantownBrewingCo",
-          authorId:"1",
-          images:[],
-          links:["https://twitter.com/MgtnBrewCo/status/502166523654717440"],
-          hashtags:[],
-          sourceType:"Twitter",
-          sourceUrl:"https://twitter.com/MgtnBrewCo/status/502166523654717440",
-          highlighted:false,
-          created:1401898727177,
-          updated:1401898727177,
-          body:"NEW ON TAP THIS FRIDAY! Our First Shift Coffee Porter! Need something to bring you out of that long hibernation?",
-          image:"https://pbs.twimg.com/profile_images/481581706156077058/VDkJuMt7.png",
-          location:[39.630454, -79.957934]
-        },
-        {
-          author:"MorgantownBrewingCo",
-          authorId:"1",
-          body:"Fun at Mountaineer Brewfest in Wheeling! — at Wheeling Heritage Port <a href='http://fb.me/2UBb4mMJd'>http://fb.me/2UBb4mMJd</a>",
-          images:[],
-          links:[],
-          location:[],
-          hashtags:[],
-          sourceType:"Twitter",
-          sourceUrl:"https://twitter.com/MgtnBrewCo/status/500847187173990401",
-          highlighted:false,
-          created:1401898727177,
-          updated:1401898727177,
-          image:"https://pbs.twimg.com/profile_images/481581706156077058/VDkJuMt7.png"
-        },{
-          author:"Gibbies Pub & Eatery",
-          authorId:"2",
-          body:"I have exactly 3 words for you: SOUL MINERS SATURDAY!!!!!!",
-          images:[],
-          links:[],
-          location:[],
-          hashtags:[],
-          sourceType:"Twitter",
-          sourceUrl:"https://twitter.com/gibbiespub/status/500772676546600960",
-          highlighted:false,
-          created:1401898727177,
-          updated:1401898727177,
-          image:"https://pbs.twimg.com/profile_images/480511952276303872/d6sFg-r1.jpeg"
-        },{
-          author:"Gibbies Pub & Eatery",
-          authorId:"2",
-          body:"Rails and Ales Festival in Huntington! Cheers!",
-          images:[],
-          links:[],
-          location:[],
-          hashtags:[],
-          sourceType:"Twitter",
-          sourceUrl:"https://twitter.com/gibbiespub/status/500772676546600960",
-          highlighted:false,
-          created:1401898727177,
-          updated:1401898727177,
-          image:"https://pbs.twimg.com/profile_images/480511952276303872/d6sFg-r1.jpeg"
-        }
-      ];
+angular.module('mms.models').factory('Story', function ($q, StoryMock) {
 
-      deferred.resolve(stories);
+  var Story = function (params) {
+    if (params) {
+      this.loadFromJson(params);
+    }
+  };
 
-      return deferred.promise;
-    };
-    Story.where = function(params){
-      var deferred = $q.defer();
-      var stories = [
-        {
-          author:"MorgantownBrewingCo",
-          authorId:"1",
-          images:[],
-          links:["https://twitter.com/MgtnBrewCo/status/502166523654717440"],
-          location:[],
-          hashtags:[],
-          sourceType:"Twitter",
-          sourceUrl:"https://twitter.com/MgtnBrewCo/status/502166523654717440",
-          highlighted:false,
-          created:1401898727177,
-          updated:1401898727177,
-          body:"NEW ON TAP THIS FRIDAY! Our First Shift Coffee Porter! Need something to bring you out of that long hibernation?... <a href='http://fb.me/1B8sdsOAq'>http://fb.me/1B8sdsOAq </a>",
-          image:"https://pbs.twimg.com/profile_images/481581706156077058/VDkJuMt7.png"
-        },
-        {
-          author:"MorgantownBrewingCo",
-          authorId:"1",
-          body:"Fun at Mountaineer Brewfest in Wheeling! — at Wheeling Heritage Port <a href='http://fb.me/2UBb4mMJd'>http://fb.me/2UBb4mMJd</a>",
-          images:[],
-          links:[],
-          location:[],
-          hashtags:[],
-          sourceType:"Twitter",
-          sourceUrl:"https://twitter.com/MgtnBrewCo/status/500847187173990401",
-          highlighted:false,
-          created:1401898727177,
-          updated:1401898727177,
-          image:"https://pbs.twimg.com/profile_images/481581706156077058/VDkJuMt7.png"
-        }
-      ];
+  Story.prototype.loadFromJson = function (json) {
+    this.author = json.author;
+    this.authorId = json.authorId;
+    this.images = json.images;
+    this.links = json.links;
+    this.hashtags = json.hashtags;
+    this.sourceType = json.sourceType;
+    this.sourceUrl = json.sourceUrl;
+    this.highlighted = json.highlighted;
+    this.created = json.created;
+    this.updated = json.updated;
+    this.body = json.body;
+    this.image = json.image;
+    this.location = json.location;
+  };
 
-      deferred.resolve(stories);
+  Story.prototype.type = function () {
+    if (this.images && this.images.length > 0) {            //Image based stories
+      return 'image';
+    }
+    else if (this.location && this.location.length === 2) { //Location centric stories
+      return 'location';
+    }
+    else {                                                  //Text only stories
+      return 'text';
+    }
+  };
 
-      return deferred.promise;
-    };
-    return Story;
-  });
+  Story.all = function () {
+    var deferred = $q.defer();
+    var data = StoryMock.all();
+    var stories = [];
+    angular.forEach(data, function(value){
+      stories.push(new Story(value));
+    });
+    deferred.resolve(stories);
+
+    return deferred.promise;
+  };
+  Story.where = function () {
+    var deferred = $q.defer();
+    var data = StoryMock.where();
+    var stories = [];
+    angular.forEach(data, function(value){
+      stories.push(new Story(value));
+    });
+    deferred.resolve(stories);
+
+    return deferred.promise;
+  };
+  return Story;
+});

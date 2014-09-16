@@ -5,7 +5,7 @@ $mms-menu-open-timing-function : linear;
 .mms-menu {
   -webkit-font-smoothing : antialiased;
   display                : inline;
-  background-color       : #2E2D30;
+  background-color       : $darker-grey;
   position               : absolute;
   top                    : 0;
   right                  : 0;

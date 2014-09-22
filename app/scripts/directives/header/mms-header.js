@@ -18,14 +18,7 @@ angular.module('mms.components')
         };
 
         function checkRoute(){
-          if($route.current.loadedTemplateUrl == "views/main.html"){
-            $log.debug('mms.components - Root page');
-            $scope.isChildPage = false;
-          }
-          else{
-            $log.debug('mms.components - Child page');
-            $scope.isChildPage = true;
-          }
+          $rootScope.menuOpen = false;
         }
 
         $scope.back = function(){
@@ -33,14 +26,14 @@ angular.module('mms.components')
         };
 
         $rootScope.$on('$locationChangeSuccess', function() {
-//          checkRoute();
+          checkRoute();
         });
 
         $rootScope.$on('$routeChangeSuccess', function() {
-//          checkRoute();
+          checkRoute();
         });
 
-//        checkRoute();
+        checkRoute();
 
       }
     };

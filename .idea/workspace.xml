@@ -35,11 +35,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="community.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="community.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scripts/services/community.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6223176" vertical-offset="0" max-vertical-offset="699">
-                  <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -65,6 +65,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="_base.scss" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/styles/_base.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.53333336" vertical-offset="0" max-vertical-offset="1080">
+                  <caret line="24" column="13" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="story.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scripts/services/story.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -82,8 +92,18 @@
           <file leaf-file-name="_login.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/styles/_login.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-21.0" vertical-offset="0" max-vertical-offset="1410">
-                  <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+                <state vertical-scroll-proportion="-3.9" vertical-offset="0" max-vertical-offset="1410">
+                  <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_menu.scss" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/styles/_menu.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.4402985" vertical-offset="785" max-vertical-offset="1455">
+                  <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -99,11 +119,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/login.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.40298507" vertical-offset="0" max-vertical-offset="670">
-                  <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+                <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="495">
+                  <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -112,8 +132,8 @@
           <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="135.83333" vertical-offset="3500" max-vertical-offset="4275">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <state vertical-scroll-proportion="-4.28" vertical-offset="1331" max-vertical-offset="4275">
+                  <caret line="103" column="15" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="15" />
                   <folding />
                 </state>
               </provider>
@@ -164,9 +184,7 @@
         <option value="$PROJECT_DIR$/app/scripts/services/story.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/styles/_header.scss" />
-        <option value="$PROJECT_DIR$/app/styles/_menu.scss" />
         <option value="$PROJECT_DIR$/app/styles/_footer.scss" />
-        <option value="$PROJECT_DIR$/app/styles/_base.scss" />
         <option value="$PROJECT_DIR$/app/views/partials/footer.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/scripts/directives/header/mms-header.js" />
@@ -180,6 +198,8 @@
         <option value="$PROJECT_DIR$/app/styles/_login.scss" />
         <option value="$PROJECT_DIR$/app/views/join.html" />
         <option value="$PROJECT_DIR$/app/views/login.html" />
+        <option value="$PROJECT_DIR$/app/styles/_base.scss" />
+        <option value="$PROJECT_DIR$/app/styles/_menu.scss" />
       </list>
     </option>
   </component>
@@ -423,7 +443,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="login&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/login.html&#10;join.h&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/join.html&#10;join.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/join.js&#10;inde&#9;FILE&#9;file:///Users/sam/projects/mms/app/index.html&#10;main&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;base&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_base.scss&#10;header&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/directives/header/mms-header.js&#10;navbar&#9;null&#9;null&#10;main.&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;footer&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/partials/footer.html&#10;story&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/services/story.js&#10;main.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/main.js&#10;app.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/app.js&#10;Story&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/services/story.js&#10;main.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/main.html&#10;mms-header&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/directives/header/mms-header.html&#10;index&#9;FILE&#9;file:///Users/sam/projects/mms/app/index.html&#10;menu&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_menu.scss&#10;main.scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;member.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/services/member.js&#10;member.&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/member.js&#10;bower&#9;FILE&#9;file:///Users/sam/projects/mms/bower.json&#10;member&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/member.js&#10;mms&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/directives/menu/mms-menu.html&#10;member.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/member.html&#10;men&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/directives/menu/mms-menu.html&#10;foot&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_footer.scss&#10;header.scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_header.scss&#10;scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_header.scss&#10;nav.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/partials/nav.html" />
+    <property name="SearchEverywhereHistoryKey" value="base&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_base.scss&#10;login&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/login.html&#10;join.h&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/join.html&#10;join.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/join.js&#10;inde&#9;FILE&#9;file:///Users/sam/projects/mms/app/index.html&#10;main&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;header&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/directives/header/mms-header.js&#10;navbar&#9;null&#9;null&#10;main.&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;footer&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/partials/footer.html&#10;story&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/services/story.js&#10;main.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/main.js&#10;app.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/app.js&#10;Story&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/services/story.js&#10;main.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/main.html&#10;mms-header&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/directives/header/mms-header.html&#10;index&#9;FILE&#9;file:///Users/sam/projects/mms/app/index.html&#10;menu&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_menu.scss&#10;main.scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/main.scss&#10;member.js&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/services/member.js&#10;member.&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/member.js&#10;bower&#9;FILE&#9;file:///Users/sam/projects/mms/bower.json&#10;member&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/controllers/member.js&#10;mms&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/directives/menu/mms-menu.html&#10;member.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/member.html&#10;men&#9;FILE&#9;file:///Users/sam/projects/mms/app/scripts/directives/menu/mms-menu.html&#10;foot&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_footer.scss&#10;header.scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_header.scss&#10;scss&#9;FILE&#9;file:///Users/sam/projects/mms/app/styles/_header.scss&#10;nav.html&#9;FILE&#9;file:///Users/sam/projects/mms/app/views/partials/nav.html" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ShaleWeb" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -768,14 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_menu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6770186" vertical-offset="0" max-vertical-offset="1455">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20149253" vertical-offset="0" max-vertical-offset="1125">
@@ -788,14 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6268657" vertical-offset="0" max-vertical-offset="670">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="135" max-vertical-offset="1080">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -898,30 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="135.83333" vertical-offset="3500" max-vertical-offset="4275">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.0" vertical-offset="0" max-vertical-offset="1410">
-          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/community.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6223176" vertical-offset="0" max-vertical-offset="699">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/join.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15129682" vertical-offset="0" max-vertical-offset="694">
@@ -938,10 +918,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/community.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40298507" vertical-offset="0" max-vertical-offset="670">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.28" vertical-offset="1331" max-vertical-offset="4275">
+          <caret line="103" column="15" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9" vertical-offset="0" max-vertical-offset="1410">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53333336" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4402985" vertical-offset="785" max-vertical-offset="1455">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>

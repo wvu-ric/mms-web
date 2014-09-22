@@ -1,19 +1,19 @@
 .browsehappy {
   margin: 0.2em 0;
   background: #c7c7d1;
-  color: #232526;
+  color: #373b3e;
   padding: 0.2em 0; }
 
 body {
   padding: 0px;
   margin: 0px;
-  color: #232526; }
+  color: #373b3e; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #1e1e1f; }
 
 html, body {
-  background-color: #232526; }
+  background-color: #373b3e; }
 
 a {
   cursor: pointer; }
@@ -98,12 +98,12 @@ ul.menu-items {
     ul.menu-items li a {
       font-size: 20px;
       line-height: 40px;
-      color: #CCC; }
+      color: #c7c7d1; }
     ul.menu-items li a:hover, ul.menu-items li a:active {
-      color: #FFF;
+      color: white;
       text-decoration: none; }
     ul.menu-items li p {
-      color: #CCC; }
+      color: #c7c7d1; }
   ul.menu-items li.menu-section-title {
     color: #717175;
     line-height: 40px;
@@ -111,10 +111,10 @@ ul.menu-items {
     text-transform: uppercase;
     font-weight: 500;
     margin-top: 20px;
-    border-top: 1px solid #5B5B5E; }
+    border-top: 1px solid #373b3e; }
   ul.menu-items li.menu-section-title.first {
     margin-top: 0px;
-    border-top: 0px solid #5B5B5E; }
+    border-top: 0px solid #373b3e; }
 
 .stories {
   background-color: white; }

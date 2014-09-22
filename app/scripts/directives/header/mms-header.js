@@ -33,14 +33,14 @@ angular.module('mms.components')
         };
 
         $rootScope.$on('$locationChangeSuccess', function() {
-          checkRoute();
+//          checkRoute();
         });
 
         $rootScope.$on('$routeChangeSuccess', function() {
-          checkRoute();
+//          checkRoute();
         });
 
-        checkRoute();
+//        checkRoute();
 
       }
     };

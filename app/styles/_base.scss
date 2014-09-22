@@ -25,13 +25,15 @@ $light-grey:    #717175;
 $lighter-grey:  #C7C7D1;
 $white:         #FFFFFF;
 
+$blue : #4A90E2;
+
 // Font Scale
 // --------------------------------------------------
-$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 $type-micro:     400 .85em / 1.6em $helvetica;
 $type-smallest:  500 1.0em / 1.5em $helvetica;
-$type-smaller:   400 1.2em / 1.1em $helvetica;
+$type-smaller:   400 1.2em / 1.2em $helvetica;
 $type-small:     500 1.2em / 1.1em $helvetica;
 $type-base:      400 1.3em / 1.1em $helvetica;
 $type-large:     500 1.3em / 1.1em $helvetica;
@@ -42,16 +44,24 @@ $type-largest:   400 1.4em / 1.1em $helvetica;
 .browsehappy {
   margin: 0.2em 0;
   background: $lighter-grey;
-  color: $dark_grey;
+  color: $darker-grey;
   padding: 0.2em 0;
 }
 
 body {
   padding: 0px;
   margin: 0px;
-  color: $dark_grey;
+  color: $darker-grey;
 }
 
 h1, h2, h3, h4, h5, h6{
   color: $black;
+}
+
+html, body {
+  background-color : $darker-grey;
+}
+
+a {
+  cursor : pointer;
 }

@@ -8,15 +8,6 @@ $icon-font-path : "/bower_components/sass-bootstrap/fonts/";
 
 
 $heading-height : 460px;
-$blue : #4A90E2;
-
-html, body {
-  background-color : #3B3B3E;
-}
-
-a {
-  cursor : pointer;
-}
 
 .angular-google-map-container {
   height : $heading-height;
@@ -209,20 +200,18 @@ section.stories {
     border-bottom : 1px solid #CCC;
     margin-left: $member_image_offset;
 
-
     h1 {
       margin      : 0;
       padding     : 0;
-      font-size   : 1em;
-      line-height : 2em;
-
+      font:$type-small;
+      line-height: 2em;
     }
 
     p {
       margin      : 0;
       padding     : 0;
-      font-size   : 1em;
-      line-height : 1.5em;
+      font:$type-smaller;
+      line-height: 1.5em;
     }
 
     p.content {

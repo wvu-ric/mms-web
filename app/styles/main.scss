@@ -4,6 +4,8 @@ $icon-font-path : "/bower_components/sass-bootstrap/fonts/";
 @import "header";
 @import "menu";
 @import "footer";
+@import "login";
+
 
 $heading-height : 460px;
 $blue : #4A90E2;
@@ -245,6 +247,10 @@ section.stories {
       height : auto;
     }
   }
+
+  article:last-child{
+    border-bottom: none;
+  }
 }
 
 .images {
@@ -284,4 +290,3 @@ section.stories {
 
   }
 }
-

@@ -66,11 +66,16 @@ ul.menu-items {
   }
 }
 
+.stories{
+  background-color: $white;
+}
+
+
+
 #main {
   position                    : absolute;
   left                        : 0;
   width                       : 100%;
-  background-color            : #FFF;
 
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;

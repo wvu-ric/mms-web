@@ -110,11 +110,13 @@ ul.menu-items {
     margin-top: 0px;
     border-top: 0px solid #5B5B5E; }
 
+.stories {
+  background-color: white; }
+
 #main {
   position: absolute;
   left: 0;
   width: 100%;
-  background-color: #FFF;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   transition: all 200ms ease;
@@ -127,23 +129,31 @@ ul.menu-items {
 
 /* Custom page footer */
 .mms-menu footer {
-  border-top: 1px solid #ccc;
+  border-top: 0px solid #717175;
   margin-top: 1.5em; }
 
 footer {
   padding: 10px 15px 5px;
   margin-bottom: 0.5em;
-  color: #C0C0C0;
-  border-top: 1px solid #ddd;
+  color: #c7c7d1;
+  border-top: 0px solid #717175;
   margin-top: -1px;
-  font-size: 12px;
-  line-height: 18px; }
+  font-size: 14px;
+  line-height: 30px; }
 
 .powered-by {
-  border-radius: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 1px solid #ccc; }
+  display: block;
+  float: right;
+  background-image: url("/images/mms-light.png");
+  width: 25px;
+  height: 30px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat; }
+
+.container--login {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: transparent; }
 
 html, body {
   background-color: #3B3B3E; }
@@ -303,6 +313,8 @@ section.stories {
       margin-left: 50px; }
   section.stories article.expanded .details {
     height: auto; }
+  section.stories article:last-child {
+    border-bottom: none; }
 
 .images {
   width: 100%;

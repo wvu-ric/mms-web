@@ -24,6 +24,10 @@ angular.module('mms', [
         templateUrl: 'views/member.html',
         controller: 'MemberCtrl'
       })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

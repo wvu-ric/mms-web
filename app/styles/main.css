@@ -147,7 +147,7 @@ footer {
   background-image: url("/images/mms-light.png");
   width: 25px;
   height: 30px;
-  background-size: 25px 25px;
+  background-size: 27px 2px;
   background-repeat: no-repeat; }
 
 .container--login {
@@ -242,7 +242,7 @@ div.top-story-container {
 
 .profile {
   position: absolute;
-  left: 0.5em;
+  left: -50px;
   top: 0.5em;
   border-radius: 100%; }
 
@@ -291,19 +291,18 @@ section.stories {
   section.stories article {
     padding: 0.25em 1em 0.35em;
     position: relative;
-    border-bottom: 1px solid #CCC; }
+    border-bottom: 1px solid #CCC;
+    margin-left: 50px; }
     section.stories article h1 {
       margin: 0;
       padding: 0;
       font-size: 1em;
-      line-height: 2em;
-      margin-left: 50px; }
+      line-height: 2em; }
     section.stories article p {
       margin: 0;
       padding: 0;
       font-size: 1em;
-      line-height: 1.5em;
-      margin-left: 50px; }
+      line-height: 1.5em; }
     section.stories article .details {
       height: 1px;
       overflow: hidden;

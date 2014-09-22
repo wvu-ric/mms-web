@@ -214,10 +214,11 @@ footer {
     font-weight: 400;
     color: white;
     -webkit-font-smoothing: antialiased;
-    padding-bottom: 50px; }
+    padding-bottom: 30px; }
     .container--login .form-opening h1 {
       font-weight: 300;
-      color: white; }
+      color: white;
+      padding-bottom: 15px; }
     .container--login .form-opening p {
       font-weight: 400;
       color: #c7c7d1; }

@@ -18,6 +18,9 @@ html, body {
 a {
   cursor: pointer; }
 
+.alert {
+  border-radius: 2px; }
+
 header {
   padding-left: 15px;
   padding-right: 15px;

@@ -8,9 +8,32 @@ angular.module('mms', [
   'google-maps',
   'mms.components',
   'mms.models',
-  'mms.mocks'
+  'mms.mocks',
+  'gatekeeper'
 ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $httpProvider) {
+
+    var interceptor = ['$rootScope', '$q', '$location', 'GateKeeper', function (scope, $q, $location, GateKeeper) {
+      function success(response) {
+        return response;
+      }
+      function error(response) {
+        var status = response.status;
+        if (status === 401) {
+          GateKeeper.lock();
+          $location.path('/login');
+          return;
+        }
+        // otherwise
+        return $q.reject(response);
+      }
+      return function (promise) {
+        return promise.then(success, error);
+      };
+    }];
+
+    $httpProvider.responseInterceptors.push(interceptor);
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

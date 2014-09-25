@@ -25,6 +25,8 @@ $light-grey:    #717175;
 $lighter-grey:  #C7C7D1;
 $white:         #FFFFFF;
 
+
+$dark-blue: #35467D;
 $blue : #4A90E2;
 
 // Font Scale
@@ -39,7 +41,6 @@ $type-base:      400 1.3em / 1.1em $helvetica;
 $type-large:     500 1.3em / 1.1em $helvetica;
 $type-larger:    700 1.3em / 1.1em $helvetica;
 $type-largest:   400 1.4em / 1.1em $helvetica;
-
 
 .browsehappy {
   margin: 0.2em 0;
@@ -64,4 +65,7 @@ html, body {
 
 a {
   cursor : pointer;
+}
+.alert {
+  border-radius: 2px;
 }

@@ -42,12 +42,6 @@
     <meta name="mobile-web-app-capable" content="yes">
     -->
 
-    <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
-    <!--
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="">
-    -->
 
     <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
     <!--
@@ -61,6 +55,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="">
+    <link rel="apple-touch-startup-image" href="images/splash.png">
 
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -109,6 +104,8 @@
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="lib/gatekeeper.js"></script>
+
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/root.js"></script>
     <script src="scripts/controllers/main.js"></script>
@@ -130,6 +127,17 @@
     <script src="scripts/mocks/mocks.js"></script>
     <script src="scripts/mocks/story-mock.js"></script>
     <script src="scripts/mocks/community-mock.js"></script>
+
     <!-- endbuild -->
+
+  <script>
+    $('body').on('touchmove', true, function(e) {
+      // Only block default if internal div contents are large enough to scroll
+      // Warning: scrollHeight support is not universal. (http://stackoverflow.com/a/15033226/40352)
+      if($(this)[0].scrollHeight > $(this).innerHeight()) {
+        e.stopPropagation();
+      }
+    });
+  </script>
 </body>
 </html>

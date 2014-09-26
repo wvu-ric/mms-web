@@ -75,7 +75,7 @@
 
     <div id="main" ng-class="{'menu-open':$root.menuOpen}">
       <mms-menu open="menuOpen"></mms-menu>
-      <mms-header title="Morgantown"></mms-header>
+      <mms-header></mms-header>
       <div ng-view=""></div>
       <div ng-include="'/views/partials/footer.html'"></div>
     </div>
@@ -115,6 +115,7 @@
     <script src="scripts/directives/components.js"></script>
 
     <script src="scripts/services/models.js"></script>
+    <script src="scripts/services/api.js"></script>
     <script src="scripts/services/community.js"></script>
     <script src="scripts/services/user.js"></script>
     <script src="scripts/services/member.js"></script>

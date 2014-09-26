@@ -12,7 +12,7 @@ angular.module('mms.models')
     Member.prototype.login = function(password){
       $log.info('mms:member-login | logging in as '+this.email);
       var deferred = $q.defer();
-      deferred.reject();
+      deferred.resolve();
       return deferred.promise;
     };
 

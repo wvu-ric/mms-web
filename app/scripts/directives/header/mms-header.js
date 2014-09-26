@@ -9,12 +9,17 @@ angular.module('mms.components')
       },
       templateUrl:'/scripts/directives/header/mms-header.html',
       link: function postLink(scope, element, attrs) {},
-      controller:function($scope, $log, $rootScope, $route, $location){
+      controller:function($scope, $log, $rootScope, $route, $location, Community){
+        $scope.community = null;
+
+        Community.current().then(function(community){
+          console.log('Set community '+community.name);
+          $scope.community = community;
+        });
 
         $scope.toggleMenu = function(){
           $rootScope.menuOpen = !$rootScope.menuOpen;
           $log.debug('mms.components - Menu toggled '+$rootScope.menuOpen);
-
         };
 
         function checkRoute(){

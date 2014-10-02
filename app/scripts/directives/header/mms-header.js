@@ -22,6 +22,10 @@ angular.module('mms.components')
           $log.debug('mms.components - Menu toggled '+$rootScope.menuOpen);
         };
 
+        $scope.closeMenu = function(){
+          $rootScope.menuOpen = true;
+        };
+
         function checkRoute(){
           $rootScope.menuOpen = false;
         }

@@ -9,12 +9,10 @@
  * Main module of the application.
  */
 angular
-  .module('mmsadminApp', [
-    'ngAnimate',
+  .module('mms.admin', [
     'ngCookies',
     'ngResource',
     'ngRoute',
-    'ngSanitize',
     'ngTouch'
   ])
   .config(function ($routeProvider) {

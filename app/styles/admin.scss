@@ -1,5 +1,8 @@
 $icon-font-path : "/bower_components/sass-bootstrap/fonts/";
 
+@import "base";
+
+
 body.admin, html.admin{
   background-color:$super-light-grey;
 }
@@ -164,13 +167,11 @@ input.search{
     }
 
     .category{
-      border-bottom: 1px solid $super-light-grey;
-      border-top: 1px solid $super-light-grey;
 
       padding      : 5px 15px;
-      background-color: rgba(87, 217, 87, 0.10);
-      color: $grey;
-      font-weight: 500;
+      background-color: #4A90E2;
+      color: #FFF;
+      font-weight: 400;
     }
 
     .member{
@@ -287,7 +288,8 @@ input.search{
 
   .header-container{
     width: 100%;
-    min-height: 200px;
+    max-height: 250px;
+    min-height: 50px;
     position: relative;
     margin-bottom: 30px;
     border-bottom:1px solid $lightest-grey;
@@ -302,14 +304,52 @@ input.search{
     width: 75px;
     height: 75px;
     position: absolute;
-    bottom:-30px;
+    bottom:-35px;
     left:75px;
 
     img.profile{
       width: 75px;
       height: 75px;
       border:1px solid $lightest-grey;
+      border-radius: 50%;
     }
 
   }
 }
+
+.stories{
+
+  article{
+    padding      : 20px 15px;
+    border-bottom: 1px solid $super-light-grey;
+
+    img{
+      width: 50px;
+      height: 50px;
+      border:1px solid $lightest-grey;
+      border-radius: 50%;
+    }
+
+    h1{
+      vertical-align: text-bottom;
+      font-size:16px;
+      font-weight: 600;
+      padding-right: 15px;
+      margin-top: 0px;
+    }
+
+    .details{
+      color:$semi-light-grey;
+
+      a{
+        color: $semi-light-grey;
+      }
+    }
+  }
+
+  article:last-child{
+    border-bottom: 0px solid $super-light-grey;
+  }
+
+}
+

@@ -270,14 +270,14 @@ div.top-story-container {
         font-size: 1.3em;
         text-transform: capitalize; }
       div.top-story-container .top-story-overlay article h1 {
-        font-size: 1.1em;
+        font-size: 1.3em;
         font-weight: 700;
         width: 100%;
         text-align: left;
         color: #FFF;
         padding-right: 25px; }
       div.top-story-container .top-story-overlay article p {
-        font-size: 1em;
+        font-size: 1.3em;
         font-weight: 400;
         width: 100%;
         text-align: left;
@@ -361,13 +361,12 @@ section.stories {
     section.stories article h1 {
       margin: 0;
       padding: 0;
-      font-size: 15px;
-      font-weight: 500;
+      font: 500 1.2em/1.1em "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       line-height: 2em; }
     section.stories article p {
       margin: 0;
       padding: 0;
-      font-size: 14px;
+      font: 400 1.2em/1.2em "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       line-height: 1.5em; }
     section.stories article .details {
       height: 1px;

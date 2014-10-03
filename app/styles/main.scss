@@ -64,7 +64,7 @@ div.top-story-container {
       }
 
       h1 {
-        font-size     : 1.1em;
+        font-size     : 1.3em;
         font-weight   : 700;
         width         : 100%;
         text-align    : left;
@@ -74,7 +74,7 @@ div.top-story-container {
       }
 
       p {
-        font-size     : 1em;
+        font-size     : 1.3em;
         font-weight   : 400;
         width         : 100%;
         text-align    : left;
@@ -202,15 +202,15 @@ section.stories {
     h1 {
       margin      : 0;
       padding     : 0;
-      font-size: 15px;
-      font-weight: 500;
+
+      font:$type-small;
       line-height: 2em;
     }
 
     p {
       margin      : 0;
       padding     : 0;
-      font-size: 14px;
+      font:$type-smaller;
       line-height: 1.5em;
     }
 

@@ -117,6 +117,16 @@ input.search {
     width: 60%;
     position: relative;
     padding-bottom: 10px; }
+  .members-container .list-narrow-container {
+    float: left;
+    width: 30%;
+    position: relative;
+    padding-bottom: 10px; }
+  .members-container .detail-wide-container {
+    float: left;
+    width: 70%;
+    position: relative;
+    padding-bottom: 10px; }
   .members-container .profile-pg-container {
     float: left;
     width: 100%;
@@ -125,12 +135,20 @@ input.search {
   .members-container .list {
     margin-top: 10px;
     margin-left: 10px;
-    background-color: white; }
+    background-color: white;
+    border: 1px solid #e0e0e1; }
   .members-container .detail {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: white;
+    padding-bottom: 15px;
+    border: 1px solid #e0e0e1; }
+  .members-container .detail-joined {
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #e0e0e1;
     padding-bottom: 15px; }
   .members-container .members .category:first-child {
     margin-top: 15px; }
@@ -140,6 +158,7 @@ input.search {
     color: #FFF;
     font-weight: 400; }
   .members-container .members .member {
+    cursor: pointer;
     padding: 20px 15px;
     border-bottom: 1px solid #f0f0f6; }
     .members-container .members .member .email {
@@ -152,10 +171,16 @@ input.search {
       color: #909095; }
     .members-container .members .member .post {
       padding-top: 5px; }
+    .members-container .members .member .title {
+      color: #909095;
+      font-size: 14px;
+      font-weight: 400; }
   .members-container .member:last-child {
     border-bottom: 0px; }
   .members-container .member.selected {
     background-color: rgba(248, 248, 254, 0.63); }
+    .members-container .member.selected .title {
+      color: #373b3e; }
   .members-container .detail .name {
     vertical-align: text-bottom;
     font-size: 18px;
@@ -251,3 +276,40 @@ input.search {
       color: #909095; }
 .stories article:last-child {
   border-bottom: 0px solid #f0f0f6; }
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset; }
+
+.btn.btn-save {
+  background-color: #4a90e2;
+  color: white;
+  min-height: 38px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300; }
+
+.btn.btn-cancel {
+  background-color: #717175;
+  color: white;
+  min-height: 38px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300; }

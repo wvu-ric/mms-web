@@ -1,14 +1,7 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name mmsadminApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the mmsadminApp
- */
 angular.module('mms.admin')
-  .controller('ProfileCtrl', function ($scope) {
+  .controller('SettingsCtrl', function ($scope) {
 
     $scope.selected = "stories";
 

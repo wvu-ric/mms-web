@@ -26,7 +26,15 @@ angular
         templateUrl: 'views/profile.html',
         controller: 'ProfileCtrl'
       })
+      .when('/settings',{
+        templateUrl: 'views/settings.html',
+        controller: 'SettingsCtrl'
+      })
+      .when('/community',{
+        templateUrl: 'views/community.html',
+        controller: 'CommunityCtrl'
+      })
       .otherwise({
-        redirectTo: '/members'
+        redirectTo: '/profile'
       });
   });

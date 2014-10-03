@@ -8,7 +8,7 @@
  * Controller of the mmsadminApp
  */
 angular.module('mms.admin')
-  .controller('NavCtrl', function ($scope, $location) {
+  .controller('NavCtrl', function ($scope, $location, $window) {
     $scope.isActive = function(route){
 
       if($location.path().indexOf(route)>=0){
@@ -18,6 +18,11 @@ angular.module('mms.admin')
     };
 
     $scope.isOrganizer = function(){
-      return true;
+      return false;
+    };
+
+    $scope.logout = function(){
+      $window.location.href = "/";
     }
+
   });

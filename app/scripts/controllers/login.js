@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('mms')
-  .controller('LoginCtrl', function ($scope, $log, Member, Community) {
+  .controller('LoginCtrl', function ($scope, $log, Member, Community, $window) {
     function init(){
       $scope.member = new Member();
       $scope.error = null;
@@ -13,6 +13,7 @@ angular.module('mms')
     $scope.login = function(password){
       var success = function(){
         $log.info('mms:LoginCtrl+login | Login successful');
+        $window.location.href = '/admin';
       };
 
       var failure = function(){

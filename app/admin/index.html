@@ -73,10 +73,10 @@
 
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class=" container-fluid">
+      <div class="container-fluid">
         <a class="logo" href="/admin"></a>
         <ul class="nav pull-left">
-          <li><a ng-href="#/members">Members</a></li>
+          <li><a ng-href="#/members" class="active">Members</a></li>
           <li><a ng-href="#/profile">Profile</a></li>
           <li><a ng-href="#/community">Community</a></li>
           <li><a ng-href="#/settings">Settings</a></li>
@@ -89,9 +89,7 @@
       </div>
     </div>
 
-    <div class="container">
-      <div ng-view=""></div>
-    </div>
+    <div ng-view="" class="container-fluid"></div>
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>

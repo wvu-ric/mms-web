@@ -1,7 +1,7 @@
 $icon-font-path : "/bower_components/sass-bootstrap/fonts/";
 
 body.admin, html.admin{
-  background-color:$white;
+  background-color:$super-light-grey;
 }
 
 .header{
@@ -37,11 +37,16 @@ body.admin, html.admin{
   }
 
   ul.nav li a:hover{
-    background-color: $grey;
+    background-color: $semi-dark-grey;
     color: $lightest-grey;
 
   }
 
+  ul.nav li a.active{
+    background-color: $grey;
+    color: #FFF;
+    border-right: 1px solid transparent;
+  }
 
   ul.nav li:last-child a{
     margin-right:0px;
@@ -52,6 +57,9 @@ body.admin, html.admin{
     border-left: 1px solid #4d4d4d;
   }
 
+  ul.nav li:first-child a.active{
+    border-left: 1px solid transparent;
+  }
 
     a.logo{
       display: inline-block;
@@ -78,8 +86,9 @@ body.admin, html.admin{
   font-size:22px;
   line-height: 30px;
   font-weight: 300;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  padding: 15px;
+  text-align: right;
+//  margin-bottom: 15px;
 
 
   a{
@@ -92,13 +101,186 @@ body.admin, html.admin{
     font-weight:400;
   }
 
-  input.search{
-    display: inline-block;
-    width: auto;
-    border-radius: 20px;
-  }
+
 }
 
 .info-muted{
   color:$semi-light-grey;
+}
+
+.search-container{
+  padding-right:15px;
+  padding-left:15px;
+}
+
+input.search{
+  display: block;
+  width : 100%;
+  border-radius: 0px;
+
+}
+
+.members-container{
+  width: 100%;
+  height:100%;
+  min-height: 100%;
+
+  position: absolute;
+  left:0px;
+
+  .list-container{
+    float:left;
+    width:40%;
+    position: relative;
+  }
+
+  .detail-container{
+    float:left;
+    width: 60%;
+    position: relative;
+  }
+
+  .list{
+    margin-top: 10px;
+    margin-left:10px;
+    background-color: $white;
+  }
+
+  .detail{
+    margin-top: 10px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color: $white;
+    padding-top:15px;
+    padding-bottom: 15px;
+  }
+
+  .members{
+
+    .category:first-child{
+      margin-top:15px;
+    }
+
+    .category{
+      border-bottom: 1px solid $super-light-grey;
+      border-top: 1px solid $super-light-grey;
+
+      padding      : 5px 15px;
+      background-color: rgba(87, 217, 87, 0.10);
+      color: $grey;
+      font-weight: 500;
+    }
+
+    .member{
+      padding      : 20px 15px;
+      border-bottom: 1px solid $super-light-grey;
+
+      .line{
+
+      }
+
+      .email{
+        font-size:13px;
+        color:$semi-light-grey;
+      }
+
+      .name{
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .date{
+        color: $semi-light-grey;
+        float:right;
+
+      }
+
+      .post{
+        padding-top: 5px;
+      }
+    }
+
+  }
+
+
+  .member:last-child{
+    border-bottom: 0px;
+  }
+
+  .member.selected{
+    background-color: rgba(248, 248, 254, 0.63);
+  }
+
+  .detail{
+
+    .name{
+      vertical-align: text-bottom;
+      font-size:18px;
+      font-weight: 600;
+      padding-left:15px;
+      padding-right: 15px;
+    }
+
+    .date{
+      color: $semi-light-grey;
+      float:right;
+      font-size:14px;
+      font-weight: 400;
+    }
+
+    .description{
+      margin-top: 15px;
+      padding-left:15px;
+      padding-right: 15px;
+      margin-bottom: 15px;
+      line-height: 1.4em;
+    }
+
+    .info{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-left:15px;
+      padding-right: 15px;
+
+//      border-top:1px solid $lightest-grey;
+//      border-bottom: 1px solid $lightest-grey;
+//
+//      background-color: rgba(248, 248, 254, 0.63);
+
+
+      border-bottom: 1px solid #F0F0F6;
+      border-top: 1px solid #F0F0F6;
+      background-color: rgba(87, 217, 87, 0.1);
+      span{
+        display: inline-block;
+        width: 33.333%;
+        float: left;
+        text-align: center;
+        color: $grey;
+        min-height: 1px;
+        font-weight: 500;
+      }
+    }
+
+
+    .categories{
+      padding-left:15px;
+      padding-right: 15px;
+      margin-top: 5px;
+      margin-bottom:5px;
+      .category{
+        background-color: #4A90E2;
+        padding: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #FFF;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+    }
+
+  }
 }

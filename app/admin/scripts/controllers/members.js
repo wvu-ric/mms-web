@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name mmsadminApp.controller:AboutCtrl
+ * @name mmsadminApp.controller:MainCtrl
  * @description
- * # AboutCtrl
+ * # MainCtrl
  * Controller of the mmsadminApp
  */
 angular.module('mms.admin')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('MembersCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

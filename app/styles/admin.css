@@ -117,6 +117,11 @@ input.search {
     width: 60%;
     position: relative;
     padding-bottom: 10px; }
+  .members-container .profile-pg-container {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px; }
   .members-container .list {
     margin-top: 10px;
     margin-left: 10px;
@@ -207,17 +212,20 @@ input.search {
     min-height: 50px;
     position: relative;
     margin-bottom: 30px;
-    border-bottom: 1px solid #e0e0e1; }
+    border-bottom: 1px solid #e0e0e1;
+    overflow: hidden; }
     .members-container .header-container img.header {
       width: 100%;
       height: auto; }
   .members-container .profile-container {
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    bottom: -35px;
-    left: 75px; }
+    position: relative;
+    height: 5px;
+    width: 100%;
+    display: block; }
     .members-container .profile-container img.profile {
+      position: absolute;
+      top: -70px;
+      left: 15px;
       width: 75px;
       height: 75px;
       border: 1px solid #e0e0e1;

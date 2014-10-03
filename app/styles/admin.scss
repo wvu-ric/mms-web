@@ -151,7 +151,6 @@ input.search{
     margin-left:10px;
     margin-right:10px;
     background-color: $white;
-    padding-top:15px;
     padding-bottom: 15px;
   }
 
@@ -219,6 +218,7 @@ input.search{
       font-weight: 600;
       padding-left:15px;
       padding-right: 15px;
+      padding-top:15px;
     }
 
     .date{
@@ -280,6 +280,34 @@ input.search{
         font-size: 14px;
         text-transform: capitalize;
       }
+    }
+
+  }
+
+  .header-container{
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 30px;
+    border-bottom:1px solid $lightest-grey;
+
+    img.header{
+      width: 100%;
+      height:auto;
+    }
+  }
+
+  .profile-container{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom:-30px;
+    left:75px;
+
+    img.profile{
+      width: 75px;
+      height: 75px;
+      border:1px solid $lightest-grey;
     }
 
   }

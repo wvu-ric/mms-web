@@ -329,7 +329,6 @@ input.search {
     margin-left: 10px;
     margin-right: 10px;
     background-color: white;
-    padding-top: 15px;
     padding-bottom: 15px; }
   .members-container .members .category:first-child {
     margin-top: 15px; }
@@ -363,7 +362,8 @@ input.search {
     font-size: 18px;
     font-weight: 600;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    padding-top: 15px; }
   .members-container .detail .date {
     color: #909095;
     float: right;
@@ -407,6 +407,25 @@ input.search {
       font-weight: 400;
       font-size: 14px;
       text-transform: capitalize; }
+  .members-container .header-container {
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e1; }
+    .members-container .header-container img.header {
+      width: 100%;
+      height: auto; }
+  .members-container .profile-container {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: -30px;
+    left: 75px; }
+    .members-container .profile-container img.profile {
+      width: 75px;
+      height: 75px;
+      border: 1px solid #e0e0e1; }
 
 .angular-google-map-container {
   height: 460px; }

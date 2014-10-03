@@ -1,0 +1,104 @@
+$icon-font-path : "/bower_components/sass-bootstrap/fonts/";
+
+body.admin, html.admin{
+  background-color:$white;
+}
+
+.header{
+  background-color: $dark-grey;
+  font-size: $type-small;
+  color:$light-grey;
+  height:40px;
+
+
+  ul.nav li{
+    display: inline-block;
+    float:left;
+  }
+
+  ul.nav li a{
+      display: block;
+      width: 100%;
+      padding: 0 15px;
+    text-transform: capitalize;
+      line-height: 40px;
+      font-size: 13px;
+      letter-spacing: 0px;
+      font-weight: 500;
+      white-space: nowrap;
+      text-decoration: none !important;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-smoothing: always;
+      text-rendering: optimizeLegibility;
+      color: $lighter-grey;
+      border-right: 1px solid #4d4d4d;
+      transition:all 0.15s ease-in-out;
+  }
+
+  ul.nav li a:hover{
+    background-color: $grey;
+    color: $lightest-grey;
+
+  }
+
+
+  ul.nav li:last-child a{
+    margin-right:0px;
+  }
+
+
+  ul.nav li:first-child a{
+    border-left: 1px solid #4d4d4d;
+  }
+
+
+    a.logo{
+      display: inline-block;
+      float: left;
+      background-image: url("/images/mms-header.png");
+      width: 23px;
+      height: 40px;
+      background-size: 22px 23px;
+      background-repeat: no-repeat;
+      margin: 9px;
+      border-left: 0px solid #4d4d4d;
+      border-right: 0px solid #4d4d4d;
+      transition: all 0.15s ease-in-out;
+
+    }
+
+  a.logo:hover{
+
+  }
+
+}
+
+.action-bar{
+  font-size:22px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+
+  a{
+    margin-left: 20px;
+  }
+
+  a.text{
+    line-height: 30px;
+    font-size:14px;
+    font-weight:400;
+  }
+
+  input.search{
+    display: inline-block;
+    width: auto;
+    border-radius: 20px;
+  }
+}
+
+.info-muted{
+  color:$semi-light-grey;
+}

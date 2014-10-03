@@ -2,7 +2,6 @@ $icon-font-path : "/bower_components/sass-bootstrap/fonts/";
 
 @import "base";
 
-
 body.admin, html.admin{
   background-color:$super-light-grey;
 }
@@ -290,12 +289,6 @@ input.search{
       margin-bottom: 10px;
       padding-left:15px;
       padding-right: 15px;
-
-//      border-top:1px solid $lightest-grey;
-//      border-bottom: 1px solid $lightest-grey;
-//
-//      background-color: rgba(248, 248, 254, 0.63);
-
 
       border-bottom: 1px solid #F0F0F6;
       border-top: 1px solid #F0F0F6;

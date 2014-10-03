@@ -1,12 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name mmsadminApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the mmsadminApp
- */
 angular.module('mms.admin')
   .controller('NavCtrl', function ($scope, $location, $window) {
     $scope.isActive = function(route){
@@ -18,7 +11,7 @@ angular.module('mms.admin')
     };
 
     $scope.isOrganizer = function(){
-      return false;
+      return true;
     };
 
     $scope.logout = function(){

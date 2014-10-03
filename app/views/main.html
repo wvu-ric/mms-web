@@ -49,8 +49,8 @@
 <section class="stories">
 
   <article ng-repeat="story in stories" ng-click="setTopStory($index)" ng-class="storyClass($index)">
-    <img class="profile" ng-src="{{story.image}}" width="40px">
-    <h1 class="member">{{story.author}}</h1>
+    <img class="profile" ng-src="{{getImage(story)}}" width="40px">
+    <h1 class="member">{{story.memberName}}</h1>
     <p class="content" ng-bind-html="story.body"></p>
   </article>
 

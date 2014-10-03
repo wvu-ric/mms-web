@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mms.models').factory('Story', function ($q, StoryMock) {
+angular.module('mms.models').factory('Story', function ($q, StoryMock, $http, API) {
 
   var Story = function (params) {
     if (params) {
@@ -36,17 +36,25 @@ angular.module('mms.models').factory('Story', function ($q, StoryMock) {
     }
   };
 
-  Story.all = function () {
+  Story.all = function(){                        //Singleton
     var deferred = $q.defer();
-    var data = StoryMock.all();
-    var stories = [];
-    angular.forEach(data, function(value){
-      stories.push(new Story(value));
+
+    $http.get(API.stories).success(function(data){
+      var stories = [];
+
+      angular.forEach(data, function(value){
+       stories.push(new Story(value));
+      });
+
+      deferred.resolve(stories);
+    }).error(function(){
+      $log.warn('mms.models:Community+current | Failed to get the current community');
+      deferred.reject();
     });
-    deferred.resolve(stories);
 
     return deferred.promise;
   };
+
   Story.where = function () {
     var deferred = $q.defer();
     var data = StoryMock.where();

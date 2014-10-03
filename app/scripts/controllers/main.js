@@ -5,6 +5,7 @@ angular.module('mms')
     $scope.map = {};
     $scope.map.config = MapConfig.start();
     $scope.map.refresh = false;
+    $scope.members = [];
 
     Story.all().then(function (stories) {
       $scope.stories = stories;
@@ -20,7 +21,16 @@ angular.module('mms')
       return type;
     };
 
-    Member.where({id: $scope.id}).then(function (member) {
-      $scope.member = member;
+    Member.all().then(function (member) {
+      $scope.members = member;
     });
+
+    $scope.getImage = function(story){
+      angular.forEach($scope.members, function(value, key){
+        if(story.memberName  = value.name){
+          return
+        }
+      });
+    };
+
   });

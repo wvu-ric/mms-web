@@ -187,6 +187,7 @@ input.search{
 
   .detail-joined{
     margin-top: 10px;
+    margin-left:10px;
     margin-right:10px;
     background-color: $white;
     border: 1px solid $lightest-grey;
@@ -443,3 +444,36 @@ input.search{
   font-weight: 300;
 }
 
+.account{
+
+  text-align: center;
+
+  .network{
+    text-align: center;
+    font-size:92px;
+
+    i{
+      text-align: center;
+
+    }
+  }
+
+
+
+  .network.twitter{
+    color:#3cf;
+  }
+
+  .network.facebook{
+    color:#3b5998;
+  }
+
+  .network.rss{
+    color:#FF6600;
+  }
+
+  .btn{
+    width: 100%;
+    display: block;
+  }
+}

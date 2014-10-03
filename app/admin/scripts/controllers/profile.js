@@ -10,7 +10,7 @@
 angular.module('mms.admin')
   .controller('ProfileCtrl', function ($scope) {
 
-    $scope.selected = "stories";
+    $scope.selected = "profile";
 
     $scope.select = function(tab){
       $scope.selected = tab;

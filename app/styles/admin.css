@@ -146,6 +146,7 @@ input.search {
     border: 1px solid #e0e0e1; }
   .members-container .detail-joined {
     margin-top: 10px;
+    margin-left: 10px;
     margin-right: 10px;
     background-color: white;
     border: 1px solid #e0e0e1;
@@ -313,3 +314,20 @@ input.search {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 300; }
+
+.account {
+  text-align: center; }
+  .account .network {
+    text-align: center;
+    font-size: 92px; }
+    .account .network i {
+      text-align: center; }
+  .account .network.twitter {
+    color: #3cf; }
+  .account .network.facebook {
+    color: #3b5998; }
+  .account .network.rss {
+    color: #FF6600; }
+  .account .btn {
+    width: 100%;
+    display: block; }

@@ -3,7 +3,7 @@
 angular.module('mms.admin')
   .controller('SettingsCtrl', function ($scope) {
 
-    $scope.selected = "stories";
+    $scope.selected = "password";
 
     $scope.select = function(tab){
       $scope.selected = tab;

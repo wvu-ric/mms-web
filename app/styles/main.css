@@ -315,11 +315,13 @@ input.search {
   .members-container .list-container {
     float: left;
     width: 40%;
-    position: relative; }
+    position: relative;
+    padding-bottom: 10px; }
   .members-container .detail-container {
     float: left;
     width: 60%;
-    position: relative; }
+    position: relative;
+    padding-bottom: 10px; }
   .members-container .list {
     margin-top: 10px;
     margin-left: 10px;
@@ -470,14 +472,14 @@ div.top-story-container {
         font-size: 1.3em;
         text-transform: capitalize; }
       div.top-story-container .top-story-overlay article h1 {
-        font-size: 1.3em;
+        font-size: 1.1em;
         font-weight: 700;
         width: 100%;
         text-align: left;
         color: #FFF;
         padding-right: 25px; }
       div.top-story-container .top-story-overlay article p {
-        font-size: 1.3em;
+        font-size: 1em;
         font-weight: 400;
         width: 100%;
         text-align: left;
@@ -561,20 +563,20 @@ section.stories {
     section.stories article h1 {
       margin: 0;
       padding: 0;
-      font: 500 1.2em/1.1em "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
       line-height: 2em; }
     section.stories article p {
       margin: 0;
       padding: 0;
-      font: 400 1.2em/1.2em "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-size: 14px;
       line-height: 1.5em; }
     section.stories article .details {
       height: 1px;
       overflow: hidden;
       font-size: 0.9em;
       line-height: 2em;
-      color: #777;
-      margin-left: 50px; }
+      color: #777; }
   section.stories article.expanded .details {
     height: auto; }
   section.stories article:last-child {

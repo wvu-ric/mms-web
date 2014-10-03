@@ -6,7 +6,6 @@ $icon-font-path : "/bower_components/sass-bootstrap/fonts/";
 @import "footer";
 @import "login";
 @import "admin";
-
 $heading-height : 460px;
 
 .angular-google-map-container {
@@ -65,7 +64,7 @@ div.top-story-container {
       }
 
       h1 {
-        font-size     : 1.3em;
+        font-size     : 1.1em;
         font-weight   : 700;
         width         : 100%;
         text-align    : left;
@@ -75,7 +74,7 @@ div.top-story-container {
       }
 
       p {
-        font-size     : 1.3em;
+        font-size     : 1em;
         font-weight   : 400;
         width         : 100%;
         text-align    : left;
@@ -203,14 +202,15 @@ section.stories {
     h1 {
       margin      : 0;
       padding     : 0;
-      font:$type-small;
+      font-size: 15px;
+      font-weight: 500;
       line-height: 2em;
     }
 
     p {
       margin      : 0;
       padding     : 0;
-      font:$type-smaller;
+      font-size: 14px;
       line-height: 1.5em;
     }
 
@@ -225,7 +225,7 @@ section.stories {
       font-size   : 0.9em;
       line-height : 2em;
       color       : #777;
-      margin-left : $member_image_offset;
+//      margin-left :;
 
     }
 

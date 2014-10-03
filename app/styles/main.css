@@ -349,8 +349,7 @@ input.search {
       font-size: 16px;
       font-weight: 600; }
     .members-container .members .member .date {
-      color: #909095;
-      float: right; }
+      color: #909095; }
     .members-container .members .member .post {
       padding-top: 5px; }
   .members-container .member:last-child {

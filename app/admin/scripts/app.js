@@ -14,7 +14,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngTouch',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'google-maps',
+    'mms.models'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -22,7 +24,10 @@ angular
         templateUrl: 'views/members.html',
         controller: 'MembersCtrl'
       })
-
+      .when('/members/:id', {
+        templateUrl: 'views/members.html',
+        controller: 'MembersCtrl'
+      })
       .when('/profile', {
         templateUrl: 'views/profile.html',
         controller: 'ProfileCtrl'

@@ -1,0 +1,108 @@
+
+<div class="members-container">
+  <div class="detail-full-container" ng-class="{'active':detailOpen()}">
+
+
+    <div class="container" style="padding-left: 0; padding-right: 0px;">
+      <div class="detail detail-map" >
+
+        <div class="alert alert-info" role="alert" hidden>
+
+          <b>Let's get started</b>
+          <p>
+            Give your community a name to let visitors know they're in the right place.
+          </p>
+
+          <b>Great!</b>
+          <p>
+            Try adding an address to a website where a visitor can get more information about your community.
+          </p>
+
+          <b>Location, location, location</b>
+          <p>
+            Drag the pin on the map to mark your community's physical location. If you don't have a physical location just leave this blank.
+          </p>
+
+          <b>Get creative</b>
+          <p>
+            Your community's description can be anything you like, although it works best when it's limited to a few sentences.
+          </p>
+
+        </div>
+
+
+        <h1 style="margin-bottom: 20px; margin-top: 5px;">Community Details</h1>
+
+
+        <div class="form">
+          <div class="form-group">
+            <label>Name *</label>
+            <input class="form-control" type="text" ng-model="community.name">
+            <p class="help-block">
+              Give your community a name to let visitors know they're in the right place.
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label>URL</label>
+            <input class="form-control" type="text" ng-model="community.url">
+            <p class="help-block">
+              Try adding an address to a website where a visitor can get more information about your community.
+            </p>
+          </div>
+
+
+          <div class="form-group" style="margin-bottom: 25px;">
+            <div class="row">
+              <div class="col-sm-12">
+                <label>Location</label>
+                <p class="help-block">
+                  Drag the pin on the map to mark your community's physical location. If you don't have a physical location just leave this blank.
+                </p>
+                <google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+
+                  <marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" >
+                  </marker>
+
+                </google-map>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 5px;">
+              <div class="col-xs-6">
+                <label>Latitude</label>
+                <input class="form-control" type="number" ng-model="community.location[0]">
+              </div>
+              <div class="col-xs-6">
+                <label>Longitude</label>
+                <input class="form-control" type="number" ng-model="community.location[1]">
+              </div>
+             </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12">
+                <label>Description</label>
+                <textarea class="form-control" ng-model="community.description">
+                </textarea>
+                <p class="help-block">
+                  Your community's description can be anything you like, although it works best when it's limited to a few sentences.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div style="text-align: right;">
+            <button type="button" class="btn btn-save " ng-click="save()">Save</button>
+            <div class="spacer" style="clear: both;"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

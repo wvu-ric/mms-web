@@ -22,7 +22,7 @@ a {
   border-radius: 2px; }
 
 body.admin, html.admin {
-  background-color: #f0f0f6; }
+  background-color: #E7E7EE; }
 
 .header {
   background-color: #373b3e;
@@ -75,6 +75,21 @@ body.admin, html.admin {
     border-left: 0px solid #4d4d4d;
     border-right: 0px solid #4d4d4d;
     transition: all 0.15s ease-in-out; }
+  .header .menu-btn {
+    display: none; }
+  @media (max-width: 768px) {
+    .header {
+      padding-left: 10px;
+      padding-right: 10px; }
+      .header a.logo {
+        display: none; }
+      .header .nav {
+        display: none; }
+      .header a.menu-btn {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 40px;
+        color: #e0e0e1; } }
 
 .action-bar {
   font-size: 22px;
@@ -83,11 +98,12 @@ body.admin, html.admin {
   padding: 15px;
   text-align: right; }
   .action-bar a {
-    margin-left: 20px; }
+    margin-left: 10px; }
   .action-bar a.text {
     line-height: 30px;
-    font-size: 14px;
-    font-weight: 400; }
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-block; }
 
 .info-muted {
   color: #909095; }
@@ -125,6 +141,11 @@ input.search {
   .members-container .detail-wide-container {
     float: left;
     width: 70%;
+    position: relative;
+    padding-bottom: 10px; }
+  .members-container .detail-full-container {
+    float: left;
+    width: 100%;
     position: relative;
     padding-bottom: 10px; }
   .members-container .profile-pg-container {
@@ -209,7 +230,7 @@ input.search {
     padding-right: 15px;
     border-bottom: 1px solid #F0F0F6;
     border-top: 1px solid #F0F0F6;
-    background-color: rgba(87, 217, 87, 0.1); }
+    background-color: #FFFFD8; }
     .members-container .detail .info span {
       display: inline-block;
       width: 33.333%;
@@ -232,6 +253,10 @@ input.search {
       font-weight: 400;
       font-size: 14px;
       text-transform: capitalize; }
+  .members-container .detail-map {
+    padding: 15px; }
+  .members-container .angular-google-map-container {
+    height: 300px; }
   .members-container .header-container {
     width: 100%;
     max-height: 250px;
@@ -331,3 +356,38 @@ input.search {
   .account .btn {
     width: 100%;
     display: block; }
+
+@media (max-width: 768px) {
+  .members-container .list-container {
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+    padding-right: 10px;
+    background-color: #f0f0f6;
+    height: 100%; }
+  .members-container .detail-container {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    display: none; }
+  .members-container .detail-container.active {
+    z-index: 300;
+    display: block; }
+  .members-container .detail .info span {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: 400; }
+    .members-container .detail .info span i {
+      display: inline-block;
+      width: 30px;
+      opacity: 0.8; } }
+h1 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 300; }
+
+.form-group {
+  padding-bottom: 5px; }

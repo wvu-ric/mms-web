@@ -75,6 +75,9 @@
     <div class="header" ng-controller="NavCtrl">
       <div class="container-fluid">
         <a class="logo" href="/admin"></a>
+        <a class="menu-btn back" ng-hide="isDetail()"><i class="fa fa-bars"></i></a>
+        <a class="menu-btn menu" ng-show="isDetail()" ng-click="back()"><i class="fa fa-angle-left"></i></a>
+
         <ul class="nav pull-left" ng-show="isOrganizer()">
           <li><a ng-href="#/members" ng-class="isActive('members')">Members</a></li>
           <li><a ng-href="#/community" ng-class="isActive('community')">Community</a></li>
@@ -102,22 +105,33 @@
     <![endif]-->
     <!-- endbuild -->
 
+
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/jquery.js"></script>
     <script src="/bower_components/angular/angular.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src="/bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="/bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
     <script src="/bower_components/angular-touch/angular-touch.js"></script>
     <script src="/bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
     <script src="/bower_components/angular-resource/angular-resource.js"></script>
     <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="/bower_components/angular-route/angular-route.js"></script>
-    <script src="/bower_components/lodash/dist/lodash.compat.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="/scripts/services/models.js"></script>
+    <script src="/scripts/services/api.js"></script>
+    <script src="/scripts/services/community.js"></script>
+    <script src="/scripts/services/user.js"></script>
+    <script src="/scripts/services/member.js"></script>
+    <script src="/scripts/services/story.js"></script>
+    <script src="/scripts/services/mapconfig.js"></script>
     <script src="scripts/controllers/members.js"></script>
     <script src="scripts/controllers/profile.js"></script>
     <script src="scripts/controllers/settings.js"></script>

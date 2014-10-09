@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mms.models').factory('Story', function ($q, StoryMock) {
+angular.module('mms.models').factory('Story', function ($q, $log, $http, API, StoryMock) {
 
   var Story = function (params) {
     if (params) {
@@ -38,12 +38,17 @@ angular.module('mms.models').factory('Story', function ($q, StoryMock) {
 
   Story.all = function () {
     var deferred = $q.defer();
-    var data = StoryMock.all();
     var stories = [];
-    angular.forEach(data, function(value){
-      stories.push(new Story(value));
+
+    $http.get(API.stories+'?q-order=desc-score').success(function(data){
+      angular.forEach(data, function(value){
+        stories.push(new Story(value));
+      });
+      deferred.resolve(stories);
+    }).error(function(){
+      $log.warn('mms.models:Story+all | Failed to get the stories');
+      deferred.reject();
     });
-    deferred.resolve(stories);
 
     return deferred.promise;
   };

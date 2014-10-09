@@ -1,15 +1,22 @@
 'use strict';
 
 angular.module('mms')
-  .controller('MainCtrl', function ($scope, MapConfig, Story, Member) {
-    $scope.map = {};
-    $scope.map.config = MapConfig.start();
-    $scope.map.refresh = false;
+  .controller('MainCtrl', function ($scope, MapConfig, Story, Member, Category) {
 
-    Story.all().then(function (stories) {
-      $scope.stories = stories;
-      $scope.topStory = $scope.stories[0];
-    });
+    function init(){
+      $scope.map = {};
+      $scope.map.config = MapConfig.start();
+      $scope.map.refresh = false;
+
+      Category.current().then(function(_categories){
+        $scope.categories = _categories;
+      });
+
+      Story.all().then(function (stories) {
+        $scope.stories = stories;
+        $scope.topStory = $scope.stories[0];
+      });
+    }
 
     $scope.setTopStory = function (index) {
       $scope.topStory = $scope.stories[index];
@@ -20,7 +27,6 @@ angular.module('mms')
       return type;
     };
 
-    Member.where({id: $scope.id}).then(function (member) {
-      $scope.member = member;
-    });
+
+    init();
   });

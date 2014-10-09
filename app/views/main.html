@@ -7,7 +7,6 @@
     refresh="map.refresh">
 </google-map>
 
-
 <div class="top-story-container">
   <div class="top-story-overlay">
 
@@ -39,10 +38,8 @@
   </div>
 </div>
 
-<section class="categories">
-  <a class="selected">All</a>
-  <a>Restaurants</a>
-  <a>Nightlife</a>
+<section class="categories" ng-show="categories.length">
+  <a ng-repeat="category in categories | limitTo:3">{{category.name}}</a>
   <a>More</a>
 </section>
 

@@ -32,31 +32,14 @@
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
 
-    <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/" >
-    -->
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <!--
     <meta name="mobile-web-app-capable" content="yes">
-    -->
-
-
-    <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
-    <!--
     <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-    -->
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
 
     <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="">
     <link rel="apple-touch-startup-image" href="images/splash.png">
-
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
@@ -117,6 +100,7 @@
     <script src="scripts/services/models.js"></script>
     <script src="scripts/services/api.js"></script>
     <script src="scripts/services/community.js"></script>
+    <script src="scripts/services/category.js"></script>
     <script src="scripts/services/user.js"></script>
     <script src="scripts/services/member.js"></script>
     <script src="scripts/services/story.js"></script>
@@ -128,17 +112,16 @@
     <script src="scripts/mocks/mocks.js"></script>
     <script src="scripts/mocks/story-mock.js"></script>
     <script src="scripts/mocks/community-mock.js"></script>
-
     <!-- endbuild -->
 
-  <script>
-    $('body').on('touchmove', true, function(e) {
-      // Only block default if internal div contents are large enough to scroll
-      // Warning: scrollHeight support is not universal. (http://stackoverflow.com/a/15033226/40352)
-      if($(this)[0].scrollHeight > $(this).innerHeight()) {
-        e.stopPropagation();
-      }
-    });
-  </script>
+    <script>
+      $('body').on('touchmove', true, function(e) {
+        // Only block default if internal div contents are large enough to scroll
+        // Warning: scrollHeight support is not universal. (http://stackoverflow.com/a/15033226/40352)
+        if($(this)[0].scrollHeight > $(this).innerHeight()) {
+          e.stopPropagation();
+        }
+      });
+    </script>
 </body>
 </html>

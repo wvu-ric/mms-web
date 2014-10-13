@@ -20,7 +20,7 @@ angular.module('mms.admin')
     };
 
     $scope.isOrganizer = function(){
-      return true;
+      return false;
     };
 
     $scope.logout = function(){

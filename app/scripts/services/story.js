@@ -36,7 +36,7 @@ angular.module('mms.models').factory('Story', function ($q, $log, $http, API, St
     }
   };
 
-  Story.all = function () {
+  Story._all = function () {
     var deferred = $q.defer();
     var stories = [];
 
@@ -52,9 +52,9 @@ angular.module('mms.models').factory('Story', function ($q, $log, $http, API, St
 
     return deferred.promise;
   };
-  Story.where = function () {
+  Story.all = function () {
     var deferred = $q.defer();
-    var data = StoryMock.where();
+    var data = StoryMock.all();
     var stories = [];
     angular.forEach(data, function(value){
       stories.push(new Story(value));

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('mms')
-  .controller('MainCtrl', function ($scope, MapConfig, Story, Member, Category) {
+  .controller('MainCtrl', function ($scope, MapConfig, Feed, Member, Category, Community) {
 
     function init(){
       $scope.map = {};
@@ -12,15 +12,30 @@ angular.module('mms')
         $scope.categories = _categories;
       });
 
-      Story.all().then(function (stories) {
-        $scope.stories = stories;
-        $scope.topStory = $scope.stories[0];
+      $scope.categoryForId = function(id){
+        var name = "";
+        angular.forEach($scope.categories, function(value, index){
+          if (value.id == id){
+            name = value.name;
+          }
+        });
+        return name;
+      };
+
+      Feed.top().then(function (feed) {
+        $scope.stories = feed.all;
+        $scope.topStory = feed.top;
+      });
+
+      Community.current().then(function(_community){
+        $scope.community = _community;
+        $scope.map.config.center = {
+          latitude: _community.location[1],
+          longitude: _community.location[0]
+        };
+        console.log($scope.map.config.center);
       });
     }
-
-    $scope.setTopStory = function (index) {
-      $scope.topStory = $scope.stories[index];
-    };
 
     $scope.storyClass = function (index) {
       var type = $scope.stories[index].type();

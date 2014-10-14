@@ -1,4 +1,19 @@
+<div class="top-story-image" ng-show="topStory.type() == 'image'">
+  <img ng-src="{{topStory.images[0]}}">
+</div>
+
 <google-map
+    ng-show="topStory.type() == 'location'"
+    center="topStory.location.center"
+    zoom="map.config.zoom"
+    draggable='false'
+    zoomable="false"
+    options="map.config.options"
+    refresh="map.refresh">
+</google-map>
+
+<google-map
+    ng-show="topStory.type() == 'text'"
     center="map.config.center"
     zoom="map.config.zoom"
     draggable='false'
@@ -11,27 +26,27 @@
   <div class="top-story-overlay">
 
     <article class="featured">
-      <span class="category">Nightlife</span>
-      <h1>{{member.name}}</h1>
+      <span class="category" ng-repeat="categoryId in categoryIds">{{}}</span>
+      <h1>{{topStory.memberName}}</h1>
       <p class="description" ng-bind-html="topStory.body"></p>
 
       <hr>
 
       <p class="details">
         <span class="status">
-          Open now
-        </span>
-        <span class="hours">
-          {{member.hours['monday']}}
+          <span ng-repeat="tag in member.hashtags">{{tag}} </span>
         </span>
         <span class="metadata">
-          <span ng-repeat="tag in member.hashtags">{{tag}} </span>
+
         </span>
       </p>
 
+      <p class="date">
+        {{topStory.created | date:'h:mm a • d MMM y'}} <a class="pull-right source" ng-href="{{topStory.sourceUrl}}">{{topStory.feedType}}</a>
+      </p>
 
       <div class="to-right">
-        <i class="fa fa-chevron-right"></i>
+        <i class="fa fa-angle-right"></i>
       </div>
     </article>
 
@@ -45,10 +60,11 @@
 
 <section class="stories">
 
-  <article ng-repeat="story in stories" ng-click="setTopStory($index)" ng-class="storyClass($index)">
+  <article ng-repeat="story in stories" ng-click="setTopStory($index)" ng-class="storyClass($index)" class="expanded">
     <img class="profile" ng-src="{{story.image}}" width="40px">
-    <h1 class="member">{{story.author}}</h1>
+    <h1 class="member">{{story.memberName}}</h1>
     <p class="content" ng-bind-html="story.body"></p>
+    <div class="details">{{story.created | date:'h:mm a • d MMM y'}} <a style="float:right;" ng-href="{{story.sourceUrl}}">Source</a></div>
   </article>
 
 </section>

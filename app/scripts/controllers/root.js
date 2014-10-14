@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('mms')
-  .controller('RootCtrl', function ($scope, $log, $rootScope, $location, GateKeeper, Member) {
+  .controller('RootCtrl', function ($scope, $log, $rootScope, $location, GateKeeper, User) {
 
     $scope.menuOpen = false;
 
@@ -16,7 +16,7 @@ angular.module('mms')
     });
 
     GateKeeper.lock(function(){
-      return !Member.current();
+      return !User._current;
     }, function(){
       $location.path('/login');
     });

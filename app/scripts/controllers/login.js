@@ -1,16 +1,15 @@
 'use strict';
 
 angular.module('mms')
-  .controller('LoginCtrl', function ($scope, $log, Member, Community, $window) {
+  .controller('LoginCtrl', function ($scope, $log, Community, User, $window) {
     function init(){
-      $scope.member = new Member();
       $scope.error = null;
       $scope.email = "";
       $scope.password = "";
     }
     init();
 
-    $scope.login = function(password){
+    $scope.login = function(email, password){
       var success = function(){
         $log.info('mms:LoginCtrl+login | Login successful');
         $window.location.href = '/admin';
@@ -23,8 +22,7 @@ angular.module('mms')
         };
       };
 
-      $scope.member.email = $scope.email;
-      $scope.member.login(password).then(success, failure);
+      $scope.user = User.login(email, password).then(success, failure);
     };
 
   });

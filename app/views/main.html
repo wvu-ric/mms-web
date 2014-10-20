@@ -60,7 +60,7 @@
 
 <section class="stories">
 
-  <article ng-repeat="story in stories" ng-click="setTopStory($index)" ng-class="storyClass($index)" class="expanded">
+  <article ng-repeat="story in stories" ng-click="select($index)" ng-class="storyClass($index)" class="expanded">
     <img class="profile" ng-src="{{story.image}}" width="40px">
     <h1 class="member">{{story.memberName}}</h1>
     <p class="content" ng-bind-html="story.body"></p>

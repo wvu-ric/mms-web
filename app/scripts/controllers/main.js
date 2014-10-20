@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('mms')
-  .controller('MainCtrl', function ($scope, MapConfig, Feed, Member, Category, Community) {
+  .controller('MainCtrl', function ($scope, $location,MapConfig, Feed, Member, Category, Community) {
 
     function init(){
       $scope.map = {};
@@ -40,6 +40,10 @@ angular.module('mms')
     $scope.storyClass = function (index) {
       var type = $scope.stories[index].type();
       return type;
+    };
+
+    $scope.select = function(index){
+      $location.path('/member/'+($scope.stories[index].memberId|1));
     };
 
 

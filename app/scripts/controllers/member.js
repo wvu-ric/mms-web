@@ -1,21 +1,21 @@
 'use strict';
 
 angular.module('mms')
-  .controller('MemberCtrl', function ($scope, Story, Member) {
+  .controller('MemberCtrl', function ($scope, Story, Member, $routeParams) {
 
-    //TODO ID pulled from URL
-    $scope.id = 'morgantown-brewing-co';
+    function init(){
+      $scope.id = $routeParams['id'];
 
-    Member.where({id:$scope.id}).then(function(member){
-      $scope.member = member;
-    });
+      Member.where({id:$scope.id}).then(function(_member){
+        $scope.member = _member;
+      });
 
-    Story.where({id:$scope.member}).then(function(stories){
-      $scope.stories = stories;
-    });
+      Story.where({id:$scope.id}).then(function(stories){
+        $scope.stories = stories;
+      });
 
-    $scope.selectStory = function(index){
-      $scope.stories[index].expanded = true;
-    };
+
+
+    }
 
   });

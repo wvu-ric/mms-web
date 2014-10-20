@@ -10,15 +10,31 @@ $heading-height : 420px;
 
 .angular-google-map-container {
   height : $heading-height;
+  background-color:$white;
 }
 
 .top-story-image{
   height: $heading-height;
   overflow: hidden;
+  background-color:$white;
   img{
     display: block;
     min-width: 100%;
     min-height: 100%;
+  }
+}
+
+.top-story-loading{
+  height: $heading-height;
+  overflow: hidden;
+  background-color:#D8D8D8;
+  img{
+    display: block;
+    max-width: 100%;
+    margin:0 auto;
+    height: $heading-height;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 }
 
@@ -75,12 +91,12 @@ div.top-story-container {
 
       h1 {
         font-size     : 1.3em;
+        min-height: 1em;
         font-weight   : 700;
         width         : 100%;
         text-align    : left;
         color         : #FFF;
         padding-right : 25px;
-
       }
 
       p {
@@ -91,6 +107,10 @@ div.top-story-container {
         color         : #FFF;
         padding-right : 25px;
 
+      }
+
+      p.description{
+        min-height: 1em;
       }
 
       hr {
@@ -214,6 +234,7 @@ $member_image_offset : 50px;
 section.stories {
   width        : 100%;
   padding-left : 1em;
+  min-height: 180px;
 
   article {
     padding       : 0.25em 1em 0.35em;
@@ -237,6 +258,7 @@ section.stories {
       font:$type-smaller;
       line-height: 1.5em;
     }
+
 
     p.content {
 
@@ -437,6 +459,7 @@ section.stories {
       padding-right: 15px;
       margin-bottom: 15px;
       line-height: 1.4em;
+
     }
 
     .info{
@@ -522,7 +545,6 @@ section.stories {
   }
 
 }
-
 
 @media (max-width: $screen-sm-min) {
 

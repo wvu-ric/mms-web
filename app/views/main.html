@@ -58,7 +58,7 @@
 </div>
 
 <section class="categories" ng-show="categories.length">
-  <a ng-repeat="category in categories | limitTo:3">{{category.name}}</a>
+  <a ng-repeat="category in categories | limitTo:3" ng-href="{{category | link}}">{{category.name}}</a>
   <a>More</a>
 </section>
 

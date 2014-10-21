@@ -8,27 +8,15 @@
       <li>
         <a ng-href="/">All</a>
       </li>
-      <li>
-        <a ng-href="#/category/food-and-drink">Food & Drink</a>
-      </li>
-      <li>
-        <a ng-href="">Nightlife</a>
-      </li>
-      <li>
-        <a ng-href="">Shopping</a>
-      </li>
-      <li>
-        <a ng-href="">Attractions</a>
-      </li>
-      <li>
-        <a ng-href="">Services</a>
+      <li ng-repeat="category in categories">
+        <a ng-href="#/category/{{category.id}}">{{category.name}}</a>
       </li>
       <li class="menu-section-title">
-        About Morgantown, WV
+        About {{community.name}}
       </li>
       <li>
         <p>
-          Whether you’re in town for a conference at the Waterfront Place Hotel, attending a WVU Football or Basketball game, or exploring the great outdoors, Morgantown is a city that has something for everyone.
+          {{community.description}}
         </p>
       </li>
       <li>

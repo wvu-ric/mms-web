@@ -13,16 +13,6 @@ angular.module('mms')
         console.log(_categories);
       });
 
-      $scope.categoryForId = function(id){
-        var name = "";
-        angular.forEach($scope.categories, function(value, index){
-          if (value.id == id){
-            name = value.name;
-          }
-        });
-        return name;
-      };
-
       Feed.top().then(function (feed) {
         $scope.stories = feed.all;
         $scope.topStory = feed.top;

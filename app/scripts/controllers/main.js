@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('mms')
-  .controller('MainCtrl', function ($scope, $location, $log, MapConfig, Feed, Member, Category, Community) {
+  .controller('MainCtrl', function ($scope, $location, $routeParams, $log, MapConfig, Feed, Member, Category, Community) {
 
     function init(){
       $scope.map = {};
@@ -10,10 +10,9 @@ angular.module('mms')
 
       Category.current().then(function(_categories){
         $scope.categories = _categories;
-        console.log(_categories);
       });
 
-      Feed.top().then(function (feed) {
+      Feed.top($routeParams.id).then(function (feed) {
         $scope.stories = feed.all;
         $scope.topStory = feed.top;
       });
@@ -24,7 +23,6 @@ angular.module('mms')
           latitude: _community.location[1],
           longitude: _community.location[0]
         };
-        console.log($scope.map.config.center);
       });
     }
 
@@ -36,7 +34,6 @@ angular.module('mms')
     $scope.select = function(index){
       $location.path('/member/'+($scope.stories[index].memberId|1));
     };
-
 
     init();
   });

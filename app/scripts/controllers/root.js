@@ -1,7 +1,22 @@
 'use strict';
 
 angular.module('mms')
-  .controller('RootCtrl', function ($scope, $log, $rootScope, $location, GateKeeper, User) {
+  .controller('RootCtrl', function ($scope, $log, $rootScope, $location, GateKeeper, User, Community, Category) {
+
+    function init(){
+      $scope.title = 'Loading...' +' • '+ 'Mobile Main Street';
+
+      Category.current().then(function(_categories){
+        $scope.categories = _categories;
+      });
+
+      Community.current().then(function(_community){
+        $scope.community = _community;
+        $scope.title = $scope.community.name +' • ' + 'Mobile Main Street';
+
+      });
+    };
+
 
     $scope.menuOpen = false;
 
@@ -20,4 +35,6 @@ angular.module('mms')
     }, function(){
       $location.path('/login');
     });
+
+    init();
   });

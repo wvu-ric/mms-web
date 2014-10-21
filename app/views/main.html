@@ -1,3 +1,4 @@
+<!-- TODO Should probably encapsulate into top-story directive-->
 <div class="top-story-image" ng-show="topStory.type() == 'image'">
   <img ng-src="{{topStory.images[0]}}">
 </div>
@@ -62,6 +63,8 @@
   <a>More</a>
 </section>
 
+
+<!-- TODO Should probably encapsulate into stories directive-->
 <section class="stories">
 
   <article ng-repeat="story in stories" ng-click="select($index)" ng-class="storyClass($index)" class="expanded">

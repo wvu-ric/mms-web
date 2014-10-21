@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('mms')
-  .controller('MainCtrl', function ($scope, $location,MapConfig, Feed, Member, Category, Community) {
+  .controller('MainCtrl', function ($scope, $location, $log, MapConfig, Feed, Member, Category, Community) {
 
     function init(){
       $scope.map = {};
@@ -10,6 +10,7 @@ angular.module('mms')
 
       Category.current().then(function(_categories){
         $scope.categories = _categories;
+        console.log(_categories);
       });
 
       $scope.categoryForId = function(id){

@@ -22,8 +22,13 @@ angular.module('mms.models')
 
       //Fetch from server once, doesn't change frequently
       if(!CategoryService._current){
+        $log.debug('mms.models:Category+current | Fetching categories...');
         $http.get(API.categories).success(function(data){
-          CategoryService._current = new CategoryService(data);
+          var _categories = [];
+          angular.forEach(data, function(_category, index){
+            _categories.push(new CategoryService(_category));
+          });
+          CategoryService._current = _categories;
           deferred.resolve(CategoryService._current);
         }).error(function(){
           $log.warn('mms.models:Category+current | Failed to get the categories');
@@ -31,6 +36,7 @@ angular.module('mms.models')
         });
       }
       else{
+        $log.debug('mms.models:Category+current | Returning cached categories');
         deferred.resolve(CategoryService._current);
       }
 

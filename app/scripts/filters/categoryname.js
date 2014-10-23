@@ -2,25 +2,20 @@
 
 angular.module('mms.components')
   .filter('categoryName', function (Category, $log) {
-    return function (input) {
-      $log.debug('mms.components:categoryName | Searching for category '+input);
-      var categories = null;
+    return function (input, _categories) {
+      var categories = _categories || Category._current;;
       var foundCategory = null;
-      var success = function(_data){
-        categories = _data;
+
+      if(categories){
         angular.forEach(categories, function(category, index){
-          console.log('Does '+category['id']+' = '+input);
           if(category['id']==input){
             foundCategory = category;
           }
         });
-      };
-
-      Category.current().then(success);
-
-      if(foundCategory){
-        $log.debug('mms.components:categoryName | Found category '+foundCategory['name']);
-        return foundCategory['name'];
+        if(foundCategory){
+          return foundCategory['name'];
+        }
       }
+
     };
   });

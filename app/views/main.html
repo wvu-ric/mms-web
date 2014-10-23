@@ -1,11 +1,10 @@
 <!-- TODO Need encapsulation into top-story directive-->
-<div class="top-story-image" ng-show="topStory.type() == 'image'">
-  <img ng-src="{{topStory.images[0]}}">
+<div class="top-story-image" ng-if="topStory.type() == 'image'" ng-style="{'background-image':topStoryImage}">
 </div>
 
 <google-map
-    ng-show="topStory.type() == 'location'"
-    center="topStory.location.center"
+    ng-if="topStory.type() == 'location'"
+    center="topStory.location"
     zoom="map.config.zoom"
     draggable='false'
     zoomable="false"
@@ -14,7 +13,7 @@
 </google-map>
 
 <google-map
-    ng-show="topStory.type() == 'text'"
+    ng-if="topStory.type() == 'text'"
     center="map.config.center"
     zoom="map.config.zoom"
     draggable='false'
@@ -33,7 +32,7 @@
     <article class="featured">
       <span class="category" ng-repeat="categoryId in categoryIds">{{}}</span>
       <h1>{{topStory.memberName}}</h1>
-      <p class="description" ng-bind-html="topStory.body"></p>
+      <p class="description" ng-bind-html="topStory.body | linky"></p>
 
       <hr>
 
@@ -68,10 +67,10 @@
 <section class="stories">
 
   <article ng-repeat="story in stories" ng-class="storyClass($index)" class="expanded">
-    <img class="profile" ng-src="{{story.image}}" width="40px">
+    <img class="profile" ng-src="{{story.memberIcon}}" width="40px">
     <h1 class="member">{{story.memberName}}</h1>
-    <p class="content" ng-bind-html="story.body"></p>
-    <img ng-show="story.images" ng-src="story.images[0]"/>
+    <p class="content" ng-bind-html="story.body | linky"></p>
+    <img class="story" ng-show="story.images" ng-src="{{story.images[0]}}"/>
     <div class="details">{{story.created | date:'h:mm a • d MMM y'}} <a style="float:right;" ng-href="{{story.sourceUrl}}">Source</a></div>
   </article>
 

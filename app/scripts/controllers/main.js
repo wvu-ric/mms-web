@@ -15,6 +15,9 @@ angular.module('mms')
       Feed.top($routeParams.id).then(function (feed) {
         $scope.stories = feed.all;
         $scope.topStory = feed.top;
+        $scope.topStoryImage = 'url('+$scope.topStory.images[0]+')';
+        $scope.map.refresh = true;
+        console.log('Top story of type: '+$scope.topStory.type());
       });
 
       Community.current().then(function(_community){

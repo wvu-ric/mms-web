@@ -15,11 +15,8 @@ angular.module('mms.components')
         Community.current().then(function(community){
           $scope.community = community;
           if(!$routeParams.id){
-            console.log('No category');
             $scope.header = community.name;
           } else{
-            console.log('Category Name:');
-            console.log($filter('categoryName')(parseInt($routeParams.id)));
             $scope.header = $filter('categoryName')(parseInt($routeParams.id));
           }
         });

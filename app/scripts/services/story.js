@@ -21,7 +21,7 @@ angular.module('mms.models').factory('Story', function () {
     if (this.images && this.images.length > 0) {            //Image based stories
       return 'image';
     }
-    else if (this.location && this.location.length === 2) { //Location centric stories
+    else if (this.location && this.location.length === 2 && !(this.location[0]==0 && this.location[1]==0)) { //Location centric stories
       return 'location';
     }
     else {                                                  //Text only stories

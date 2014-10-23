@@ -11,7 +11,7 @@ angular.module('mms.models')
     CategoryService._current = null;                             //Private var
 
     CategoryService.prototype.loadFromJson = function (json) {   //Public method
-      
+
       this.id = json.id;
       this.name = json.name;
       this.icon = json.icon;

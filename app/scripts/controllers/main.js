@@ -26,7 +26,6 @@ angular.module('mms')
           latitude: _community.location[0],
           longitude: _community.location[1]
         };
-        console.log($scope.map.config.center);
       });
     }
 

@@ -14,6 +14,13 @@ angular.module('mms.models').factory('Story', function () {
       if(that){
         that[key] = value;
       }
+      if(key == 'categoryIds'){ //Dedupe from server
+        var uniqueIds = [];
+        angular.forEach(value, function(category, index){
+          if($.inArray(category, uniqueIds) === -1) uniqueIds.push(category);
+        });
+        that[key] = uniqueIds;
+      }
     });
   };
 

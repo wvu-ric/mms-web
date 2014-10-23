@@ -10,7 +10,7 @@ angular.module('mms')
 
       Community.current().then(function(_community){
         $scope.community = _community;
-        $scope.title = $scope.community.name +' • ' + 'Mobile Main Street';
+        $scope.title = $scope.community.name;
       });
     };
 

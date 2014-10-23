@@ -9,6 +9,7 @@ angular.module('mms.components')
       var success = function(_data){
         categories = _data;
         angular.forEach(categories, function(category, index){
+          console.log('Does '+category['id']+' = '+input);
           if(category['id']==input){
             foundCategory = category;
           }

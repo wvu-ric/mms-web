@@ -39,7 +39,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="">
-    <link rel="apple-touch-startup-image" href="images/splash.png">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
@@ -121,7 +120,6 @@
     <script>
       $('body').on('touchmove', true, function(e) {
         // Only block default if internal div contents are large enough to scroll
-        // Warning: scrollHeight support is not universal. (http://stackoverflow.com/a/15033226/40352)
         if($(this)[0].scrollHeight > $(this).innerHeight()) {
           e.stopPropagation();
         }

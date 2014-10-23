@@ -109,8 +109,23 @@ div.top-story-container {
 
       }
 
+      $font-size: 1.3;
+      $line-height: 1.4;
+      $lines-to-show: 5;
+
       p.description{
         min-height: 1em;
+        display: block;
+        display: -webkit-box;
+        max-width: 100%;
+        height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+        margin: 0 auto;
+        font-size: $font-size;
+        line-height: $line-height;
+        -webkit-line-clamp: $lines-to-show;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       hr {
@@ -243,7 +258,7 @@ section.stories {
     margin-left: $member_image_offset;
 
     cursor : pointer;
-    
+
     h1 {
       margin      : 0;
       padding     : 0;
@@ -273,6 +288,12 @@ section.stories {
       color       : #777;
 //      margin-left :;
 
+    }
+
+    img{
+      width:100%;
+      height:auto;
+      padding:10px;
     }
 
   }

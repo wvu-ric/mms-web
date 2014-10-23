@@ -28,7 +28,7 @@ angular.module('mms.models').factory('Feed', function ($q, $log, $http, API, Sto
       categoryParam = '&categoryId='+categoryId
     }
 
-    $http.get(API.stories+'?q-order=desc-score&q-limit=10'+categoryParam).success(function(data){
+    $http.get(API.top+'?q-order=desc-score&q-limit=10'+categoryParam).success(function(data){
       angular.forEach(data, function(value){
         stories.push(new Story(value));
       });

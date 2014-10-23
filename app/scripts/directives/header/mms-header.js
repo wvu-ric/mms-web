@@ -9,13 +9,21 @@ angular.module('mms.components')
       },
       templateUrl:'/scripts/directives/header/mms-header.html',
       link: function postLink(scope, element, attrs) {},
-      controller:function($scope, $log, $rootScope, $route, $location, Community){
+      controller:function($scope, $log, $rootScope, $route, $location, $routeParams, $filter, Community, Category){
         $scope.community = null;
 
         Community.current().then(function(community){
-          console.log('Set community '+community.name);
           $scope.community = community;
+          if(!$routeParams.id){
+            console.log('No category');
+            $scope.header = community.name;
+          } else{
+            console.log('Category Name:');
+            console.log($filter('categoryName')(parseInt($routeParams.id)));
+            $scope.header = $filter('categoryName')(parseInt($routeParams.id));
+          }
         });
+
 
         $scope.toggleMenu = function(){
           $rootScope.menuOpen = !$rootScope.menuOpen;

@@ -13,9 +13,12 @@ angular.module('mms.components')
           }
         });
         if(foundCategory){
+          $log.debug('mms.components:categoryName | Identified '+foundCategory['name']);
           return foundCategory['name'];
         }
       }
+      $log.warn('mms.components:categoryName | Failed to identify category '+input);
+
 
     };
   });

@@ -23,9 +23,10 @@ angular.module('mms')
       Community.current().then(function(_community){
         $scope.community = _community;
         $scope.map.config.center = {
-          latitude: _community.location[1],
-          longitude: _community.location[0]
+          latitude: _community.location[0],
+          longitude: _community.location[1]
         };
+        console.log($scope.map.config.center);
       });
     }
 

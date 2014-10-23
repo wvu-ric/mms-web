@@ -30,7 +30,7 @@
   <div class="top-story-overlay">
 
     <article class="featured">
-      <span class="category" ng-repeat="categoryId in categoryIds">{{}}</span>
+      <span class="category" ng-repeat="categoryId in topStory.categoryIds track by $index">{{categoryId | categoryName}}</span>
       <h1>{{topStory.memberName}}</h1>
       <p class="description" ng-bind-html="topStory.body | linky"></p>
 

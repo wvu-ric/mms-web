@@ -14,12 +14,18 @@ angular.module('mms.components')
 
         Community.current().then(function(community){
           $scope.community = community;
+          updateHeader($scope.community);
+        });
+
+        function updateHeader(community){
           if(!$routeParams.id){
-            $scope.header = community.name;
+            if(community){
+              $scope.header = community.name;
+            }
           } else{
             $scope.header = $filter('categoryName')(parseInt($routeParams.id));
           }
-        });
+        }
 
 
         $scope.toggleMenu = function(){
@@ -44,6 +50,7 @@ angular.module('mms.components')
         });
 
         $rootScope.$on('$routeChangeSuccess', function() {
+          updateHeader($scope.community);
           checkRoute();
         });
 

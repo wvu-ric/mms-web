@@ -3,6 +3,6 @@
 angular.module('mms.components')
   .filter('categoryImageUrl', function () {
     return function (input) {
-      return 'categoryImageUrl filter: ' + input;
+      return '';
     };
   });

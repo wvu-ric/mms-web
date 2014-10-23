@@ -14,7 +14,7 @@ angular.module('mms.models')
         latitude: 39.630454,
         longitude: -79.957934
       },
-      zoom: 17,
+      zoom: 12,
       options:{
         disableDefaultUI:true
       }
